@@ -1,0 +1,168 @@
+:root{
+  --ceniza:#dfe0dc; --tinta:#1b1a1c; --humo:#5b5c5a;
+  --sangre:#7d1217; --sangre-oscura:#3d080b; --hueso:#f1e9df; --luna:#f4f0e2;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Work Sans",system-ui,sans-serif;
+  --split:50%;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{font-family:var(--sans);line-height:1.65;background:var(--ceniza);color:var(--tinta)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sangre);outline-offset:3px}
+.bodas :focus-visible{outline-color:var(--luna)}
+
+/* ===== PORTADA (división de los dos libros) ===== */
+.split{position:relative;height:100svh;min-height:520px;overflow:hidden;touch-action:pan-y;cursor:ew-resize}
+.lado{position:absolute;inset:0;display:flex;align-items:center;padding:0 7vw}
+.lado.tula{background:var(--ceniza);color:var(--tinta);clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+.lado.bodas{background:var(--sangre);color:var(--hueso);justify-content:flex-end;text-align:right;clip-path:inset(0 0 0 var(--split))}
+.lado::before{content:"";position:absolute;inset:0;background:var(--foto,none) center/contain no-repeat;opacity:.4;z-index:0}
+.lado.tula::before{mix-blend-mode:multiply}
+.lado.bodas::before{opacity:.35;mix-blend-mode:luminosity}
+.texto{position:relative;z-index:1;max-width:min(34ch,38vw)}
+.autor{font-size:.95rem;letter-spacing:.04em;opacity:.8;margin-bottom:.6rem}
+.split h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.4rem,6.5vw,6rem);line-height:.95;margin-bottom:1rem}
+.tula h1{font-weight:400}
+.lema{font-family:var(--serif);font-style:italic;font-size:clamp(1.1rem,2vw,1.6rem)}
+.anillo{position:absolute;right:4vw;top:8%;width:min(14vw,160px);aspect-ratio:1;border:2px solid var(--tinta);border-radius:50%;opacity:.35}
+.anillo::after{content:"";position:absolute;inset:-12px;border:1px solid var(--tinta);border-radius:50%;opacity:.5}
+.luna{position:absolute;right:6vw;top:5%;width:min(10vw,110px);aspect-ratio:1;border-radius:50%;background:var(--luna);box-shadow:0 0 90px 30px rgba(244,240,226,.35);animation:latir 6s ease-in-out infinite;z-index:0}
+@keyframes latir{50%{box-shadow:0 0 120px 50px rgba(244,240,226,.5)}}
+.asa{position:absolute;top:0;bottom:0;left:var(--split);width:44px;transform:translateX(-50%);background:none;border:0;cursor:ew-resize}
+.asa span{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--hueso);box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.asa span::after{content:"";position:absolute;top:50%;left:50%;width:22px;height:22px;transform:translate(-50%,-50%);border-radius:50%;background:var(--sangre);border:3px solid var(--hueso)}
+.comenzar{position:absolute;bottom:4.6rem;left:50%;transform:translateX(-50%);z-index:3;padding:.8rem 1.8rem;background:var(--tinta);color:var(--hueso);border:2px solid var(--hueso);border-radius:99px;text-decoration:none;font-weight:500;cursor:pointer;white-space:nowrap}
+.comenzar:hover{background:var(--sangre)}
+.pista{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);font-size:.85rem;padding:.3rem .9rem;background:rgba(0,0,0,.65);color:var(--hueso);border-radius:99px;pointer-events:none;transition:opacity .5s;white-space:nowrap}
+.pista.oculta{opacity:0}
+.split .texto{animation:entrar 1.1s .2s both}
+@keyframes entrar{from{opacity:0;transform:translateY(14px)}}
+
+/* ===== MENÚ ===== */
+.menu{position:sticky;top:0;z-index:5;display:flex;gap:1.4rem;justify-content:center;padding:.85rem 1rem;background:var(--ceniza);border-bottom:1px solid var(--tinta);overflow-x:auto;white-space:nowrap}
+.menu a{text-decoration:none;font-weight:500;font-size:.95rem}
+.menu a:hover{color:var(--sangre);text-decoration:underline;text-underline-offset:5px}
+
+/* ===== SECCIONES ===== */
+.bloque{max-width:1000px;margin:0 auto;padding:5rem 1.5rem 1rem}
+.num{font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;color:var(--sangre)}
+h2{font-family:var(--serif);font-size:clamp(2rem,4.5vw,3.4rem);font-weight:600;line-height:1.1;margin:.2rem 0 1.5rem}
+h3{font-family:var(--serif);font-size:1.7rem;margin:2.2rem 0 1rem}
+.intro{max-width:62ch;margin-bottom:1.5rem;font-family:var(--serif);font-size:1.3rem}
+.objetivo{border-left:4px solid var(--sangre);padding:.5rem 1.2rem;max-width:62ch}
+.dos{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:start}
+.linea{list-style:none;border-left:2px solid var(--tinta);padding-left:1.2rem}
+.linea li{margin:.7rem 0}.linea b{color:var(--sangre);margin-right:.5rem}
+
+/* Imágenes */
+.foto img,.foto .vacia{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:4px;display:block}
+figcaption{font-size:.85rem;color:var(--humo);margin-top:.4rem}
+.foto-card{width:100%;aspect-ratio:4/3;object-fit:cover;margin-top:.8rem;border-radius:4px}
+.vacia{display:grid;place-items:center;text-align:center;padding:1rem;background:rgba(0,0,0,.08);border:1px dashed var(--humo);color:var(--humo);font-size:.85rem}
+
+/* Tarjetas */
+.cuadros{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.cuadros article{background:var(--tinta);color:var(--ceniza);padding:1.2rem;border-radius:4px}
+.cuadros article:nth-child(even){background:var(--sangre);color:var(--hueso)}
+.cuadros h4{font-family:var(--serif);font-size:1.35rem;line-height:1.2;margin-bottom:.4rem}
+
+/* Acordeón */
+.lista details{border-top:1px solid var(--tinta);padding:1rem 0}
+.lista details:last-child{border-bottom:1px solid var(--tinta)}
+.lista summary{cursor:pointer;font-family:var(--serif);font-size:1.45rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.lista summary::after{content:"+";font-weight:400;transition:transform .3s}
+.lista details[open] summary::after{transform:rotate(45deg)}
+.lista details p{margin-top:.7rem;max-width:65ch}
+
+/* Pestañas */
+.pestanas{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.pestanas button{font:inherit;font-weight:500;padding:.55rem 1.2rem;border:2px solid var(--tinta);border-radius:99px;background:transparent;color:inherit;cursor:pointer}
+.pestanas button[aria-selected="true"]{background:var(--tinta);color:var(--ceniza)}
+.panel h3{margin-top:0}
+.panel[hidden]{display:none}
+blockquote{font-family:var(--serif);font-style:italic;font-size:1.6rem;border-left:4px solid var(--sangre);padding-left:1.2rem;margin-bottom:1rem;max-width:50ch}
+
+/* Personajes */
+.personajes{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.personajes li{display:flex;gap:1rem;align-items:center;padding:1rem;background:var(--tinta);color:var(--ceniza);border-radius:4px}
+.personajes img,.personajes .vacia{width:76px;height:104px;border-radius:38px 38px 0 0;object-fit:cover;object-position:center top;flex:none;font-size:.65rem;padding:.3rem}
+.personajes strong{font-family:var(--serif);font-size:1.35rem;display:block}
+
+/* Notas y bibliografía */
+.nota{margin-top:1rem;padding:.8rem 1.1rem;border:1px solid var(--humo);border-left:4px solid var(--sangre);font-size:.92rem;max-width:70ch}
+.apa{list-style:none}
+.apa li{padding-left:2rem;text-indent:-2rem;margin:.9rem 0}
+footer{max-width:1000px;margin:4rem auto 0;padding:2rem 1.5rem 3rem;border-top:1px solid var(--tinta)}
+.creditos{font-size:.9rem;opacity:.75}
+
+@media (max-width:720px){
+  .texto{max-width:40vw}
+  .split h1{font-size:clamp(1.7rem,8vw,3rem)}
+  .lema{display:none}
+  .dos{grid-template-columns:1fr}
+  .menu{justify-content:flex-start}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ===== Contenido largo ===== */
+.bloque p{margin-bottom:1rem;max-width:68ch}
+.bloque .dos p{max-width:none}
+.vineta{margin:0 0 1.2rem 1.3rem;max-width:68ch}
+.vineta li{margin:.5rem 0}
+.linea{margin:1.5rem 0}
+.panel.dos:not([hidden]){display:grid}
+.panel small{display:block;font-family:var(--sans);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--sangre);margin-top:.3rem}
+.interp{border-left:4px solid var(--sangre);padding-left:1rem;background:rgba(0,0,0,.05);padding-block:.6rem}
+.obras article{display:flex;flex-direction:column}
+.portada{width:100%;max-width:150px;aspect-ratio:2/3;object-fit:cover;border-radius:3px;margin-bottom:.8rem}
+.vacia.portada{font-size:.7rem}
+.lista figure{max-width:340px;margin-top:1rem}
+.lista details[open]>p+ul,.lista .vineta{margin-top:.5rem}
+.personajes strong+*{display:inline}
+.panel blockquote+p{font-weight:500}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:640px;margin:1rem 0 1.5rem}
+.panel h4{font-family:var(--serif);font-size:1.5rem;margin:1.6rem 0 .5rem}
+.actividad fieldset{border:1px solid var(--tinta);border-radius:4px;padding:.9rem 1.1rem;margin-bottom:1rem;max-width:560px}
+.actividad legend{font-family:var(--serif);font-size:1.3rem;font-weight:600;padding:0 .4rem}
+.actividad label{display:block;padding:.3rem 0;cursor:pointer}
+.actividad fieldset.bien{border:2px solid #1f6b3a;background:rgba(31,107,58,.1)}
+.actividad fieldset.mal{border:2px solid var(--sangre);background:rgba(125,18,23,.1)}
+.comprobar{font:inherit;font-weight:500;padding:.7rem 1.6rem;background:var(--tinta);color:var(--ceniza);border:0;border-radius:99px;cursor:pointer}
+.comprobar:hover{background:var(--sangre)}
+#resultado{margin-top:1rem;font-weight:500}
+.apa a{word-break:break-all}
+@media (max-width:720px){.duo{grid-template-columns:1fr}}
+
+/* ===== Botones de portada y selector de libro ===== */
+.comenzar{border:2px solid var(--hueso);font:inherit;font-weight:500}
+.c-tula{left:25%}
+.c-bodas{left:75%;background:var(--sangre)}
+.c-bodas:hover{background:var(--tinta)}
+.sel{display:inline-flex;border:2px solid currentColor;border-radius:99px;overflow:hidden;flex:none}
+.sel button{font:inherit;font-size:.9rem;font-weight:500;padding:.25rem .9rem;border:0;background:transparent;color:inherit;cursor:pointer}
+.sel button[aria-pressed="true"]{background:var(--sangre);color:var(--hueso)}
+.menu{align-items:center}
+
+/* ===== Tema rojo para Bodas de sangre ===== */
+body{transition:background .5s,color .5s}
+body[data-libro="bodas"]{background:var(--sangre-oscura);color:var(--hueso)}
+body[data-libro="bodas"] .menu{background:var(--sangre-oscura);border-color:var(--hueso)}
+body[data-libro="bodas"] .menu a:hover{color:var(--luna)}
+body[data-libro="bodas"] footer{border-color:var(--hueso)}
+body[data-libro="bodas"] :focus-visible{outline-color:var(--luna)}
+body[data-libro="bodas"] .sel button[aria-pressed="true"]{background:var(--hueso);color:var(--sangre-oscura)}
+#libro-bodas{--ceniza:#3d080b;--tinta:#f1e9df;--sangre:#e8868b;--humo:#cfc6bb}
+#libro-bodas .cuadros article{background:var(--hueso);color:var(--sangre-oscura)}
+#libro-bodas .cuadros article:nth-child(even){background:#7d1217;color:var(--hueso)}
+#libro-bodas .pestanas button[aria-selected="true"]{background:var(--hueso);color:var(--sangre-oscura)}
+#libro-bodas .interp{background:rgba(255,255,255,.06)}
+
+@media (max-width:720px){
+  .comenzar{font-size:.8rem;padding:.6rem .9rem;white-space:normal;max-width:44vw;text-align:center}
+}
+#libro-bodas .actividad fieldset.bien{border-color:#7fd19b;background:rgba(127,209,155,.12)}
+#libro-bodas .actividad fieldset.mal{border-color:#ff9aa0;background:rgba(255,154,160,.12)}
+#libro-bodas .comprobar{color:var(--sangre-oscura)}
+#libro-bodas .panel.dos:not([hidden]){display:block}
+#libro-bodas .panel.dos > figure.foto{max-width:760px;margin-top:1.2rem}
+#libro-bodas .panel.dos > figure.foto img{aspect-ratio:auto;height:auto;width:100%}

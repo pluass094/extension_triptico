@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La tía Tula: maternidad, identidad, familia y trascendencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 1. INICIO · portada dividida -->
+<header class="split" id="inicio" aria-label="Portada">
+  <section class="lado tula">
+    <div class="anillo" aria-hidden="true"></div>
+    <div class="texto">
+      <p class="autor">Miguel de Unamuno</p>
+      <h1>La tía Tula</h1>
+      <p class="lema">Ser madre sin ser esposa.</p>
+    </div>
+  </section>
+  <section class="lado bodas">
+    <div class="luna" aria-hidden="true"></div>
+    <div class="texto">
+      <p class="autor">Federico García Lorca</p>
+      <h1>Bodas de sangre</h1>
+      <p class="lema">Lo que la sangre llama, la tierra lo cobra.</p>
+    </div>
+  </section>
+  <button class="asa" id="asa" role="slider" aria-label="Deslizar entre los dos libros" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></button>
+  <button class="comenzar c-tula" data-libro="tula">Recorrido: La tía Tula</button>
+  <button class="comenzar c-bodas" data-libro="bodas">Recorrido: Bodas de sangre</button>
+  <p class="pista" id="pista">Arrastra para elegir un libro</p>
+</header>
+
+<nav class="menu" aria-label="Secciones">
+  <div class="sel" role="group" aria-label="Elegir libro">
+    <button data-libro="tula" aria-pressed="true">La tía Tula</button>
+    <button data-libro="bodas" aria-pressed="false">Bodas de sangre</button>
+  </div>
+  <a data-s="inicio" href="#inicio">Inicio</a>
+  <a data-s="autor" href="#autor">Autor</a>
+  <a data-s="obra" href="#obra">Obra y capítulos</a>
+  <a data-s="analisis" href="#analisis">Análisis</a>
+  <a data-s="contexto" href="#contexto">Contexto</a>
+  <a data-s="conexiones" href="#conexiones">Conexiones</a>
+  <a data-s="reflexion" href="#reflexion">Reflexionemos</a>
+  <a data-s="biblio" href="#biblio">Bibliografía</a>
+</nav>
+
+<main id="libro-tula" class="libro">
+  <section id="presentacion" class="bloque">
+    <p class="num">Presentación del proyecto</p>
+    <h2>La tía Tula: maternidad, identidad, familia y trascendencia en la obra de Miguel de Unamuno</h2>
+    <p>La presente página web tiene como propósito ampliar el análisis literario de la novela <i>La tía Tula</i>, escrita por Miguel de Unamuno y publicada en 1921. A través de este recorrido se estudiarán los principales acontecimientos de la obra, sus personajes, los conflictos familiares y los temas filosóficos y sociales que se desarrollan a lo largo de la narración.</p>
+    <p>La novela presenta la historia de Gertrudis, conocida como la tía Tula, una mujer que asume la responsabilidad de criar a los hijos de su familia y que construye su identidad alrededor de la maternidad, el cuidado y la protección del hogar, aunque no experimente la maternidad biológica.</p>
+    <p>El análisis también permitirá relacionar la obra con problemáticas actuales, como la responsabilidad emocional dentro de las familias, la construcción de la identidad, los vínculos afectivos, la libertad personal y la influencia de las creencias religiosas en las decisiones humanas.</p>
+    <div class="objetivo"><strong>Objetivo general</strong><p>Analizar la novela <i>La tía Tula</i> desde una perspectiva literaria, histórica, social, psicológica y filosófica, identificando los principales conflictos de sus personajes y relacionándolos con situaciones y problemáticas de la sociedad actual.</p></div>
+    <h3>Objetivos específicos</h3>
+    <ul class="vineta">
+      <li>Conocer la vida, trayectoria y pensamiento filosófico de Miguel de Unamuno.</li>
+      <li>Interpretar los capítulos XXII, XXIII, XXIV y XXV, identificando sus acontecimientos más importantes.</li>
+      <li>Examinar los temas, personajes, símbolos y recursos narrativos de la novela.</li>
+      <li>Comprender el contexto histórico y social en el que se desarrolla la obra.</li>
+      <li>Establecer conexiones entre la novela y otras manifestaciones artísticas, cinematográficas y filosóficas.</li>
+    </ul>
+  </section>
+
+  <!-- 2. AUTOR -->
+  <section id="autor" class="bloque">
+    <p class="num">02</p><h2>Conozcamos al autor: Miguel de Unamuno</h2>
+    <h3>2.1. Biografía</h3>
+    <div class="dos">
+      <div>
+        <p>Miguel de Unamuno nació el 29 de septiembre de 1864 en Bilbao, España, y falleció el 31 de diciembre de 1936 en Salamanca. Fue escritor, filósofo, poeta, dramaturgo, ensayista y uno de los representantes más importantes de la Generación del 98.</p>
+        <p>Desde joven mostró interés por la literatura, la filosofía y los problemas relacionados con la existencia humana. Estudió Filosofía y Letras en la Universidad Central de Madrid y posteriormente obtuvo una cátedra de Lengua Griega en la Universidad de Salamanca, institución en la que desarrolló gran parte de su trayectoria académica.</p>
+        <p>En 1900 fue nombrado rector de la Universidad de Salamanca. Sin embargo, sus críticas a las autoridades políticas y su participación en los debates públicos de España provocaron enfrentamientos con el poder. En 1924 fue desterrado por la dictadura de Miguel Primo de Rivera a Fuerteventura. Posteriormente vivió en Francia hasta su regreso a España en 1930.</p>
+        <p>Su vida estuvo marcada por una constante preocupación por la religión, la muerte, la inmortalidad, la libertad y el sentido de la existencia humana.</p>
+        <p>Unamuno no fue únicamente un escritor interesado en contar historias: utilizó la literatura como una herramienta para explorar los conflictos internos del ser humano y cuestionar las certezas de la sociedad.</p>
+      </div>
+      <figure class="foto"><img data-ph="Retrato de Unamuno" src="img/Miguel_de_Unamuno.jpg" alt="Retrato de Miguel de Unamuno"><figcaption>Miguel de Unamuno · Fuente: todoliteratura.es</figcaption></figure>
+    </div>
+    <ol class="linea">
+      <li><b>1864</b> Nace en Bilbao.</li>
+      <li><b>1900</b> Es nombrado rector de la Universidad de Salamanca.</li>
+      <li><b>1924</b> Es desterrado a Fuerteventura por la dictadura de Primo de Rivera.</li>
+      <li><b>1930</b> Regresa a España tras vivir en Francia.</li>
+      <li><b>1936</b> Muere en Salamanca.</li>
+    </ol>
+    <p class="nota">Fuentes: Casa Museo Unamuno de la Universidad de Salamanca y Biblioteca Nacional de España.</p>
+
+    <h3>2.2. Trayectoria académica y literaria</h3>
+    <p>Su producción intelectual abarcó diferentes géneros literarios:</p>
+    <ul class="vineta">
+      <li><b>Novela:</b> utilizó los personajes y sus conflictos para explorar problemas filosóficos y existenciales.</li>
+      <li><b>Ensayo:</b> reflexionó sobre España, la religión, la cultura y la condición humana.</li>
+      <li><b>Poesía:</b> expresó sus preocupaciones personales, espirituales y existenciales.</li>
+      <li><b>Teatro:</b> desarrolló conflictos relacionados con la identidad, la conciencia y las relaciones humanas.</li>
+    </ul>
+    <p>Una característica importante de su escritura es que los acontecimientos externos suelen tener menos importancia que los pensamientos, sentimientos y contradicciones de los personajes.</p>
+
+    <h3>2.3. Obras principales</h3>
+    <div class="cuadros obras">
+      <article><img class="portada" data-ph="Niebla" src="img/Niebla.jpg" alt="Portada de Niebla"><h4>Niebla (1914)</h4><p>Explora la identidad, la libertad y la relación entre el creador y sus personajes. Presenta una reflexión sobre la existencia y la conciencia de uno mismo.</p></article>
+      <article><img class="portada" data-ph="Abel Sánchez" src="img/Abel Sanchez.jpg" alt="Portada de Abel Sánchez"><h4>Abel Sánchez (1917)</h4><p>Aborda la envidia, los celos, el resentimiento y los conflictos psicológicos que pueden destruir las relaciones humanas.</p></article>
+      <article><img class="portada" data-ph="Sentimiento trágico" src="img/Del sentimiento trágico de la vida.jpg" alt="Portada de Del sentimiento trágico de la vida"><h4>Del sentimiento trágico de la vida (1913-1914)</h4><p>Reflexiona sobre el deseo humano de vivir eternamente, el miedo a la muerte y el conflicto entre la fe y la razón.</p></article>
+      <article><img class="portada" data-ph="La tía Tula" src="img/La_tia_tula.jpg" alt="Portada de La tía Tula"><h4>La tía Tula (1921)</h4><p>Examina la maternidad, el sacrificio, la familia, la religión y el deseo de trascendencia a través de la vida de Gertrudis.</p></article>
+      <article><img class="portada" data-ph="San Manuel Bueno" src="img/San Manuel Bueno.jpg" alt="Portada de San Manuel Bueno, mártir"><h4>San Manuel Bueno, mártir (1931)</h4><p>Presenta el conflicto entre la fe, la duda religiosa, la verdad y la necesidad humana de encontrar esperanza.</p></article>
+    </div>
+
+    <h3>2.4. El pensamiento filosófico de Unamuno</h3>
+    <div class="lista">
+      <details><summary>El temor a la muerte y el deseo de permanecer</summary>
+        <p>Uno de los principales problemas filosóficos de Unamuno fue la preocupación por la muerte. El autor consideraba que el ser humano no solamente desea vivir, sino que también quiere continuar existiendo y conservar su identidad más allá de la muerte.</p>
+        <p>Este pensamiento se conoce como el deseo de inmortalidad. Para Unamuno, la muerte representa una de las mayores angustias humanas porque significa la posibilidad de dejar de existir y desaparecer definitivamente.</p>
+        <p>En <i>La tía Tula</i>, este pensamiento se manifiesta cuando Gertrudis enfrenta sus últimos momentos de vida y expresa su esperanza de reunirse con sus seres queridos después de morir. Su deseo de permanecer también aparece en la manera en que transmite sus enseñanzas a Manolita.</p></details>
+      <details><summary>La lucha entre la fe y la razón</summary>
+        <p>Unamuno consideraba que la razón y la fe no siempre ofrecen respuestas compatibles. La razón permite reconocer los límites de nuestro conocimiento, mientras que la fe representa una necesidad humana de creer y encontrar esperanza.</p>
+        <p>En su pensamiento existe una lucha constante entre querer comprender racionalmente la existencia y necesitar creer que hay algo más allá de la muerte.</p>
+        <p>En la novela, esta contradicción se observa en la relación de Gertrudis con la religión católica, especialmente en sus referencias a la Virgen María, el purgatorio, la oración y la vida después de la muerte.</p></details>
+      <details><summary>La búsqueda de sentido de la existencia y la trascendencia</summary>
+        <p>Para Unamuno, las personas buscan que su vida tenga un significado que permanezca más allá de su existencia física.</p>
+        <p>En <i>La tía Tula</i>, Gertrudis encuentra sentido a su vida mediante el cuidado de los niños, la formación de una familia y la transmisión de sus valores. Aunque no tiene hijos biológicos propios, consigue construir una identidad materna a través de sus acciones.</p>
+        <p>Su trascendencia se representa principalmente mediante Manolita, quien conserva sus enseñanzas y continúa desempeñando un papel protector dentro de la familia.</p></details>
+    </div>
+  </section>
+
+  <!-- 3. OBRA Y CAPÍTULOS -->
+  <section id="obra" class="bloque">
+    <p class="num">03</p><h2>La obra y sus capítulos</h2>
+    <h3>3.1. Contexto general de la novela</h3>
+    <div class="dos">
+      <div>
+        <p><i>La tía Tula</i> es una novela publicada en 1921 que cuenta la historia de Gertrudis, una mujer que, después de la muerte de su hermana Rosa, asume la responsabilidad de cuidar y criar a los hijos de su familia.</p>
+        <p>La protagonista rechaza la posibilidad de construir una relación matrimonial convencional y decide dedicar gran parte de su existencia a la maternidad espiritual. A través de sus decisiones, Unamuno presenta una reflexión sobre las diferentes formas de ser madre, los sacrificios personales y las contradicciones que existen entre los deseos individuales y las responsabilidades familiares.</p>
+        <p>La novela también plantea interrogantes sobre la religión, la sexualidad, la identidad femenina y el significado de la vida.</p>
+        <p>Una característica importante es que Gertrudis no es presentada como un personaje completamente perfecto. Sus decisiones pueden interpretarse como actos de amor y protección, pero también como expresiones de control y renuncia personal.</p>
+      </div>
+      <figure class="foto"><img data-ph="Portada de La tía Tula" src="img/TIA TULA.jpg" alt="Edición de La tía Tula"><figcaption>Fuente: mercadolibre.cl</figcaption></figure>
+    </div>
+
+    <h3>3.2. Resumen desarrollado de los capítulos XXII, XXIII, XXIV y XXV</h3>
+    <p>Los cuatro capítulos permiten observar las consecuencias de las decisiones de Tula y cómo su influencia continúa después de su muerte.</p>
+    <div class="tabs" data-grupo="cap">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="c22">Capítulo XXII</button>
+        <button role="tab" aria-selected="false" data-p="c23">Capítulo XXIII</button>
+        <button role="tab" aria-selected="false" data-p="c24">Capítulo XXIV</button>
+        <button role="tab" aria-selected="false" data-p="c25">Capítulo XXV</button>
+      </div>
+      <div class="panel dos" id="c22"><div>
+        <h3>Capítulo XXII: La despedida de Gertrudis <small>Muerte y maternidad</small></h3>
+        <p>En este capítulo, Gertrudis se encuentra gravemente enferma y comprende que sus últimos momentos están cerca. Su cuerpo está debilitado y comienza a pensar en la posibilidad de morir sin conocer al nuevo integrante de la familia que está por nacer.</p>
+        <p>Antes de despedirse de todos, solicita hablar a solas con Manolita. Durante esta conversación recuerda momentos de la infancia de la niña, especialmente una historia relacionada con una muñeca que había caído en un pozo.</p>
+        <p>Gertrudis utiliza este recuerdo para hablarle sobre el dolor, la pérdida y la imposibilidad de evitar ciertos acontecimientos de la vida. También le pide que no desee morir y que continúe viviendo junto a sus hermanos.</p>
+        <p>Uno de los momentos más importantes ocurre cuando le encarga a Manolita cuidar de sus hermanos después de su muerte. De esta manera, le transmite una responsabilidad que representa la continuidad de su propia función dentro de la familia.</p>
+        <p>También le solicita que le lleve dos muñecas: la de Manolita y la que ella conservaba desde su infancia. Este objeto representa los recuerdos de la niñez, los afectos y la conexión emocional entre ambas.</p>
+        <p class="interp"><b>Interpretación:</b> el capítulo muestra el miedo a la muerte, la necesidad de dejar un legado y la transmisión de responsabilidades entre generaciones. Gertrudis comprende que su existencia está llegando a su fin, pero intenta asegurar que sus valores permanezcan mediante Manolita.</p></div>
+        <figure class="foto"><img data-ph="Capítulo XXII" src="img/Despedida.jpg" alt="Ilustración del capítulo XXII"><figcaption>Fuente: mutualart.com</figcaption></figure></div>
+      <div class="panel dos" id="c23" hidden><div>
+        <h3>Capítulo XXIII: Las últimas palabras <small>Fe y trascendencia</small></h3>
+        <p>En este capítulo, Gertrudis reúne a los miembros de su familia para despedirse de ellos. Durante la conversación habla sobre su enfermedad y compara el sufrimiento físico que experimenta con el fuego del purgatorio, mostrando la influencia de sus creencias religiosas.</p>
+        <p>También expresa su tristeza por no poder conocer al nuevo integrante de la familia. Su preocupación demuestra que, incluso durante sus últimos momentos, continúa pensando en los demás y en el futuro de su hogar.</p>
+        <p>A lo largo de su despedida, ofrece consejos sobre el amor, el sacrificio y la importancia de ayudar a las personas que atraviesan situaciones difíciles. Utiliza la imagen de una persona que cae en el fango para explicar que amar también implica acompañar al otro en sus momentos más complicados, incluso cuando hacerlo representa un riesgo personal.</p>
+        <p>Finalmente, pide que oren por ella y que la Virgen la perdone. Después de sufrir un desmayo, entra en agonía y muere.</p>
+        <p class="interp"><b>Interpretación:</b> este capítulo representa el enfrentamiento entre la vida y la muerte, así como la esperanza religiosa de una existencia posterior. También permite reflexionar sobre el sacrificio y los límites del amor, pues Gertrudis transmite una visión de entrega que puede llegar a exigir la renuncia personal.</p></div>
+        <figure class="foto"><img data-ph="Capítulo XXIII" src="img/Ultimas_Palabras.jpg" alt="Ilustración del capítulo XXIII"><figcaption>Fuente: en.wikipedia.org</figcaption></figure></div>
+      <div class="panel dos" id="c24" hidden><div>
+        <h3>Capítulo XXIV: La permanencia de la tía <small>Memoria y legado</small></h3>
+        <p>Después de la muerte de Gertrudis, la familia comienza a experimentar cambios en sus relaciones. Sin embargo, su presencia continúa siendo muy importante para todos, hasta el punto de que deja de ser llamada por su nombre y pasa a ser simplemente «la Tía».</p>
+        <p>El narrador explica que Gertrudis continúa viviendo simbólicamente dentro de la familia porque sus enseñanzas, recuerdos y valores permanecen presentes.</p>
+        <p>A pesar de que antes su presencia mantenía unido el hogar, después de su muerte aparecen divisiones y alianzas entre los hermanos. Se forman grupos con diferentes intereses y comienzan a hacerse visibles algunos conflictos que anteriormente permanecían ocultos.</p>
+        <p>Manolita adquiere especial importancia porque conserva los objetos personales de Gertrudis, sus recuerdos, sus documentos y sus enseñanzas. Incluso comienza a reproducir sus expresiones y su manera de actuar, por lo que sus hermanos llegan a llamarla «¡Otra tía!».</p>
+        <p>El capítulo también desarrolla el simbolismo de las abejas y la colmena. Unamuno compara la transmisión de la tradición familiar con la organización de una colmena, en la que el conocimiento y el trabajo se conservan mediante las generaciones.</p>
+        <p class="interp"><b>Interpretación:</b> la muerte física no significa necesariamente la desaparición de una persona. Gertrudis permanece mediante la memoria, la educación y los valores que transmitió. Manolita representa la continuidad de ese legado.</p></div>
+        <figure class="foto"><img data-ph="Capítulo XXIV" src="img/La permanecia.jpg" alt="Ilustración del capítulo XXIV"><figcaption>Fuente: wikiart.org</figcaption></figure></div>
+      <div class="panel dos" id="c25" hidden><div>
+        <h3>Capítulo XXV: Los conflictos y la herencia emocional <small>Identidad familiar</small></h3>
+        <p>El último capítulo desarrolla los conflictos que continúan existiendo dentro de la familia después de la muerte de Gertrudis.</p>
+        <p>Uno de los principales acontecimientos se relaciona con Rosita, quien busca constantemente la atención de los demás y se queja de que no recibe suficiente cariño o comprensión. También expresa inconformidad con su hermano Ramiro y busca apoyo emocional en Caridad, la esposa de este.</p>
+        <p>Manolita observa estas conductas y considera que Rosita intenta llamar la atención mediante sus quejas y actitudes. Por eso, interviene para señalarle que no debe provocar celos ni generar conflictos entre los miembros de la familia.</p>
+        <p>Otro aspecto importante es la relación entre Elvira y Enrique, quienes son hermanastros y mantienen una cercanía afectiva que despierta preocupación en Manolita. Ella considera que su comportamiento puede superar los límites de una relación fraternal y les advierte sobre la importancia de no jugar con los sentimientos.</p>
+        <p>Finalmente, Manolita se enfrenta a Rosita durante una discusión relacionada con los celos y las tensiones familiares. Sin embargo, al darse cuenta de que sus palabras han sido demasiado duras, reconoce su equivocación y le pide perdón.</p>
+        <p>Rosita también reconoce que necesita perdón y termina llamándola «Tía», lo que representa la continuidad del vínculo familiar y del legado de Gertrudis.</p>
+        <p class="interp"><b>Interpretación:</b> el capítulo demuestra que los conflictos familiares no desaparecen con la muerte de una persona. Sin embargo, también muestra que los valores aprendidos pueden ayudar a resolverlos. Manolita comienza a ocupar el lugar de Gertrudis, aunque debe aprender a ejercer esa responsabilidad sin repetir necesariamente todos sus comportamientos.</p></div>
+        <figure class="foto"><img data-ph="Capítulo XXV" src="img/Los conflictos.jpg" alt="Ilustración del capítulo XXV"><figcaption>Fuente: museoreinasofia.es</figcaption></figure></div>
+    </div>
+
+    <h3>3.3. ¿Qué representan estos cuatro capítulos en conjunto?</h3>
+    <p>Los capítulos XXII al XXV constituyen el cierre de la novela y desarrollan tres grandes ideas:</p>
+    <ol class="vineta">
+      <li><b>La muerte:</b> Gertrudis comprende que su vida está terminando y se enfrenta a la incertidumbre sobre lo que existe después de ella.</li>
+      <li><b>La permanencia:</b> aunque muere físicamente, sus enseñanzas y recuerdos continúan presentes en la familia.</li>
+      <li><b>La continuidad familiar:</b> Manolita hereda parte de su función y demuestra que las responsabilidades y los valores pueden transmitirse entre generaciones.</li>
+    </ol>
+    <p>En conjunto, estos capítulos permiten comprender que la verdadera herencia de Gertrudis no está constituida por bienes materiales, sino por la influencia que ejerció en las personas que la rodeaban.</p>
+  </section>
+
+  <!-- 4. ANÁLISIS -->
+  <section id="analisis" class="bloque">
+    <p class="num">04</p><h2>Análisis literario</h2>
+    <div class="tabs" data-grupo="ana">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="a-temas">Temas</button>
+        <button role="tab" aria-selected="false" data-p="a-pers">Personajes</button>
+        <button role="tab" aria-selected="false" data-p="a-estilo">Estilo narrativo</button>
+        <button role="tab" aria-selected="false" data-p="a-simb">Símbolos</button>
+        <button role="tab" aria-selected="false" data-p="a-citas">Citas</button>
+      </div>
+
+      <div class="panel" id="a-temas">
+        <h3>4.1. Temas principales</h3>
+        <div class="cuadros">
+          <article><h4>La maternidad biológica y espiritual</h4><p>Uno de los temas centrales de la novela es la diferencia entre tener hijos biológicos y ejercer la maternidad mediante el cuidado, la educación y el afecto.</p><p>Gertrudis no tiene hijos propios, pero asume la crianza de los hijos de su hermana y desarrolla un vínculo materno con ellos. La obra permite reflexionar sobre cómo la maternidad también puede construirse mediante las acciones y las responsabilidades asumidas.</p></article>
+          <article><h4>El sacrificio personal</h4><p>Gertrudis dedica gran parte de su vida a proteger a su familia. Sin embargo, este compromiso también implica renunciar a sus propios deseos y oportunidades personales.</p><p>El sacrificio aparece como una expresión de amor, pero también plantea una pregunta: ¿hasta qué punto una persona debe renunciar a sí misma para cuidar de los demás?</p></article>
+          <article><h4>La familia y los vínculos afectivos</h4><p>La novela muestra que una familia no está libre de conflictos por el simple hecho de compartir un hogar. Los celos, las diferencias, las preferencias y las necesidades de atención pueden generar divisiones.</p></article>
+          <article><h4>La muerte y la inmortalidad</h4><p>La muerte es uno de los grandes conflictos de la novela. Gertrudis busca encontrar sentido a su existencia mediante la continuidad de su familia y la posibilidad de una vida después de la muerte.</p></article>
+          <article><h4>La religión y la espiritualidad</h4><p>Las creencias religiosas influyen en las decisiones y pensamientos de Gertrudis. La Virgen María, la oración y la vida eterna son referencias que ayudan a comprender su visión del mundo.</p></article>
+        </div>
+      </div>
+
+      <div class="panel" id="a-pers" hidden>
+        <h3>4.2. Personajes principales</h3>
+        <ul class="personajes">
+          <li><img data-ph="Gertrudis" src="img/Gertrudis.jpg" alt="Gertrudis (Tula)"><div><strong>Gertrudis (Tula)</strong>Es la protagonista. Una mujer fuerte, decidida y protectora que asume la responsabilidad de criar a los hijos de su familia. Representa la maternidad espiritual, el sacrificio y la búsqueda de trascendencia. También manifiesta contradicciones relacionadas con el control y la renuncia personal.</div></li>
+          <li><img data-ph="Manolita" src="img/Manolita.jpg" alt="Manolita"><div><strong>Manolita</strong>Es la hija de Manuela y Ramiro. Desarrolla una relación muy cercana con Gertrudis y hereda sus enseñanzas. Representa la continuidad de los valores familiares y la transmisión de responsabilidades entre generaciones.</div></li>
+          <li><img data-ph="Rosita" src="img/Rosita.jpg" alt="Rosita"><div><strong>Rosita (Rosa en algunos pasajes)</strong>Es una de las hijas de Rosa, la primera esposa de Ramiro. En los capítulos finales muestra inseguridad afectiva, quejas y una necesidad de atención. Representa los conflictos emocionales que pueden aparecer dentro de las relaciones familiares.</div></li>
+          <li><img data-ph="Elvira" src="img/Elvira.jpg" alt="Elvira"><div><strong>Elvira</strong>Es hija de Ramiro y Rosa. Mantiene una relación muy cercana con su hermanastro Enrique. Su comportamiento permite reflexionar sobre la confianza, la cercanía emocional y los límites dentro de las relaciones familiares.</div></li>
+          <li><img data-ph="Enrique" src="img/Enrique.jpg" alt="Enrique"><div><strong>Enrique</strong>Es hijo de Ramiro y Manuela. Mantiene una relación afectiva muy cercana con Elvira. Su comportamiento es observado críticamente por Manolita, lo que permite analizar los límites de las relaciones entre hermanastros.</div></li>
+          <li><img data-ph="Caridad" src="img/Caridad.jpg" alt="Caridad"><div><strong>Caridad</strong>Es la esposa de Ramirín, uno de los hijos criados por Gertrudis. Mantiene una relación de confianza con ella y posteriormente se convierte en una figura importante dentro de la familia.</div></li>
+        </ul>
+        <p class="nota">Los retratos son referencias visuales ilustrativas, no representaciones oficiales de los personajes.</p>
+      </div>
+
+      <div class="panel" id="a-estilo" hidden>
+        <h3>4.3. Estilo narrativo</h3>
+        <p>Miguel de Unamuno utiliza un estilo narrativo que prioriza los conflictos interiores de los personajes sobre las descripciones detalladas de los espacios y acontecimientos. Entre sus características destacan:</p>
+        <ul class="vineta">
+          <li><b>Narración reflexiva:</b> los acontecimientos se acompañan de pensamientos y reflexiones sobre la existencia.</li>
+          <li><b>Diálogos filosóficos:</b> los personajes expresan sus ideas mediante conversaciones relacionadas con la religión, el amor, la muerte y la familia.</li>
+          <li><b>Simbolismo:</b> determinados objetos y elementos de la naturaleza representan ideas más profundas.</li>
+          <li><b>Profundidad psicológica:</b> los personajes presentan contradicciones, deseos y conflictos internos.</li>
+          <li><b>Narrador en tercera persona:</b> permite conocer las acciones de los personajes y acceder a sus pensamientos.</li>
+        </ul>
+      </div>
+
+      <div class="panel" id="a-simb" hidden>
+        <h3>4.4. Símbolos presentes en la novela</h3>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Símbolo</th><th scope="col">Significado</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Las muñecas</th><td>La infancia, los recuerdos y la conexión afectiva entre Gertrudis y Manolita.</td></tr>
+            <tr><th scope="row">Las abejas y la colmena</th><td>La organización familiar, el trabajo, la transmisión de conocimientos y la continuidad espiritual.</td></tr>
+            <tr><th scope="row">La maternidad</th><td>El cuidado, la protección y la construcción de vínculos que van más allá de la biología.</td></tr>
+            <tr><th scope="row">El purgatorio</th><td>El sufrimiento, la purificación y las creencias religiosas relacionadas con la muerte.</td></tr>
+            <tr><th scope="row">El hogar</th><td>La protección, la unión familiar y el legado de Gertrudis.</td></tr>
+            <tr><th scope="row">La muerte</th><td>El límite de la existencia y la búsqueda de trascendencia.</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="panel" id="a-citas" hidden>
+        <h3>4.5. Citas relevantes para el análisis</h3>
+        <p>Estas citas proceden de la novela y son especialmente útiles para acompañar el análisis de los últimos capítulos.</p>
+        <blockquote>«Mis cosas son las vuestras...»</blockquote><p><b>Capítulo XXIII.</b></p>
+        <p class="interp"><b>Interpretación:</b> demuestra cómo Gertrudis ha construido su identidad alrededor de las necesidades de su familia, hasta el punto de considerar que su vida personal está subordinada a la de los demás.</p>
+        <blockquote>«Te los entrego a ti...»</blockquote><p><b>Capítulo XXII.</b></p>
+        <p class="interp"><b>Interpretación:</b> representa la transmisión de responsabilidades de Gertrudis hacia Manolita y el inicio de una nueva etapa en la organización familiar.</p>
+        <blockquote>«¡Otra tía!»</blockquote><p><b>Capítulo XXIV.</b></p>
+        <p class="interp"><b>Interpretación:</b> expresa cómo Manolita comienza a reproducir las enseñanzas, actitudes y comportamientos de Gertrudis.</p>
+        <blockquote>«¡Tía! ¡Tía!»</blockquote><p><b>Capítulo XXV.</b></p>
+        <p class="interp"><b>Interpretación:</b> representa el reconocimiento de Manolita como una figura de protección y unión familiar, heredera del papel que anteriormente desempeñaba Gertrudis.</p>
+        <p class="nota">Fuente del texto original: <i>La tía Tula</i>, capítulos XXII-XXV.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTEXTO -->
+  <section id="contexto" class="bloque">
+    <p class="num">05</p><h2>La obra y su contexto histórico, social, cultural y político</h2>
+    <div class="lista">
+      <details open><summary>5.1. España de finales del siglo XIX y principios del siglo XX</summary>
+        <p>La novela <i>La tía Tula</i> fue publicada en 1921, durante una etapa de importantes transformaciones políticas, sociales y culturales en España.</p>
+        <p>Uno de los acontecimientos que marcaron este periodo fue el llamado Desastre del 98, cuando España perdió sus últimas grandes colonias de ultramar, entre ellas Cuba, Puerto Rico y Filipinas, después de la guerra con Estados Unidos.</p>
+        <p>Esta situación provocó una crisis de identidad nacional y generó cuestionamientos sobre el atraso económico, político y educativo del país.</p>
+        <p>Durante las primeras décadas del siglo XX, España experimentó diferentes tensiones sociales, desigualdades económicas, conflictos políticos y debates relacionados con la modernización de la sociedad.</p>
+        <p>Este contexto resulta importante para comprender la literatura de Unamuno, ya que sus obras reflejan preocupaciones relacionadas con la identidad, la religión, la moral y el sentido de la existencia.</p>
+        <figure class="foto"><img data-ph="España 1898-1921" src="img/ctx_espana.jpg" alt="España a inicios del siglo XX"><figcaption>Fuente: Ministerio de Cultura</figcaption></figure></details>
+
+      <details><summary>5.2. La Generación del 98 y sus preocupaciones</summary>
+        <p>La Generación del 98 fue un grupo de escritores e intelectuales españoles que compartieron preocupaciones sobre la situación del país y los problemas de la sociedad de su tiempo. Entre sus representantes se encuentran Miguel de Unamuno, Pío Baroja, Azorín y Antonio Machado.</p>
+        <p>Sus principales preocupaciones fueron:</p>
+        <ul class="vineta">
+          <li>La crisis de identidad de España después de la pérdida de sus colonias.</li>
+          <li>El atraso económico y educativo.</li>
+          <li>La desigualdad social y las dificultades de la población.</li>
+          <li>La necesidad de modernizar el país.</li>
+          <li>La reflexión sobre la existencia humana, la religión y la muerte.</li>
+          <li>La búsqueda de una identidad cultural y nacional.</li>
+        </ul>
+        <p>En <i>La tía Tula</i>, estas preocupaciones se relacionan principalmente con los conflictos individuales, la religión, la familia y la búsqueda de sentido de la vida.</p>
+        <p>Es importante señalar que la novela no es una narración política sobre el Desastre del 98, sino una obra que permite observar algunas de las inquietudes intelectuales y culturales de su época.</p>
+        <figure class="foto"><img data-ph="Generación del 98" src="img/Generacion98.jpg" alt="Escritores de la Generación del 98"><figcaption>Fuente: nuevatribuna.es</figcaption></figure></details>
+
+      <details><summary>5.3. La situación de las mujeres y sus posibilidades sociales</summary>
+        <p>Durante finales del siglo XIX y principios del XX, las mujeres españolas enfrentaban importantes limitaciones sociales y legales. En muchos sectores de la sociedad predominaba la idea de que su principal responsabilidad debía estar relacionada con el matrimonio, la maternidad, el cuidado de los hijos y la administración del hogar.</p>
+        <p>Sin embargo, la situación no era igual para todas las mujeres. Las oportunidades dependían de factores como la clase social, el nivel educativo, el lugar de residencia y las condiciones económicas familiares.</p>
+        <p>En este periodo también comenzaron a desarrollarse movimientos que defendían una mayor participación femenina en la educación, el trabajo y la vida pública. Un acontecimiento importante ocurrió en 1910, cuando se reconoció oficialmente el acceso de las mujeres a la universidad en España sin las restricciones administrativas anteriores.</p>
+        <p>En relación con <i>La tía Tula</i>, Gertrudis representa a una mujer que ejerce una gran autoridad dentro del hogar y toma decisiones importantes sobre la vida familiar. Sin embargo, su identidad sigue estando profundamente vinculada con la maternidad y el cuidado.</p>
+        <p>Esto permite reflexionar sobre las expectativas sociales que condicionaban la vida de las mujeres y sobre las diferentes formas en que podían ejercer su autonomía.</p>
+        <figure class="foto"><img data-ph="Mujeres a inicios del siglo XX" src="img/Situacion_mujeres.jpg" alt="Mujeres españolas a inicios del siglo XX"><figcaption>Fuente: elpais.com</figcaption></figure></details>
+
+      <details><summary>5.4. La importancia de la familia y la maternidad</summary>
+        <p>Durante este periodo, la familia era considerada una de las principales instituciones de organización social. El matrimonio, la crianza de los hijos y la transmisión de valores religiosos y morales tenían una gran importancia.</p>
+        <p>La maternidad era vista frecuentemente como una de las funciones fundamentales de las mujeres. Además, los discursos médicos e higienistas de finales del siglo XIX promovieron una maternidad relacionada con la educación, la higiene infantil y el cuidado responsable de los hijos.</p>
+        <p>En la novela, Gertrudis representa una forma particular de maternidad, ya que asume la crianza de los hijos de su familia sin haberlos concebido biológicamente. Su comportamiento permite comprender que la maternidad también puede estar relacionada con la protección, la educación, la responsabilidad y el afecto.</p>
+        <p>No obstante, la obra también permite cuestionar la idealización del sacrificio femenino, porque Gertrudis construye su identidad alrededor del bienestar de los demás y deja en segundo plano sus propios deseos.</p>
+        <figure class="foto"><img data-ph="Familia y maternidad" src="img/Importancia_familia.jpg" alt="Familia y maternidad en la España de la época"><figcaption>Fuente: cultura.castillalamancha.es</figcaption></figure></details>
+
+      <details><summary>5.5. La influencia de la religión católica</summary>
+        <p>La religión católica tuvo una influencia importante en la organización social y cultural de España durante los siglos XIX y XX. Sus enseñanzas estaban presentes en la educación, las costumbres familiares, las celebraciones y las normas morales de numerosos sectores de la población.</p>
+        <p>En <i>La tía Tula</i>, la religión constituye un elemento fundamental para comprender la personalidad de Gertrudis. La protagonista utiliza referencias religiosas para interpretar la vida, la maternidad, el sufrimiento y la muerte. Su admiración por la Virgen María también permite comprender su ideal de maternidad y pureza.</p>
+        <p>La oración, el purgatorio y la esperanza de una vida después de la muerte son elementos que aparecen especialmente en los capítulos finales.</p>
+        <p class="interp"><b>Relación con la obra:</b> la religión funciona como una guía moral para Gertrudis, pero también genera conflictos relacionados con la sexualidad, el sacrificio y la renuncia personal.</p>
+        <figure class="foto"><img data-ph="Religión católica" src="img/Ifluencia_religion.jpg" alt="La religión católica en la España de la época"><figcaption>Fuente: museodelprado.es</figcaption></figure></details>
+
+      <details><summary>5.6. La mujer, la religión y la maternidad en Gertrudis</summary>
+        <p>Estos tres aspectos se encuentran estrechamente relacionados en la construcción del personaje principal.</p>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Aspecto</th><th scope="col">Representación en Gertrudis</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Mujer</th><td>Tiene autoridad, toma decisiones y dirige aspectos importantes de la vida familiar.</td></tr>
+            <tr><th scope="row">Religión</th><td>Interpreta su vida mediante sus creencias y valores católicos.</td></tr>
+            <tr><th scope="row">Maternidad</th><td>Ejerce el cuidado y la crianza de niños que no son biológicamente suyos.</td></tr>
+            <tr><th scope="row">Identidad</th><td>Construye su sentido de existencia alrededor de la familia.</td></tr>
+            <tr><th scope="row">Trascendencia</th><td>Busca permanecer mediante sus enseñanzas y la continuidad familiar.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Una interpretación importante es que Gertrudis representa tanto la capacidad de una mujer para tomar decisiones como las contradicciones de una identidad construida alrededor del sacrificio maternal.</p>
+        <p>Por eso, no es conveniente describirla simplemente como una mujer independiente o como una figura completamente sometida a las normas sociales. Su personaje contiene ambas dimensiones y permite desarrollar diferentes interpretaciones.</p></details>
+    </div>
+    <p class="nota">Las tendencias y expectativas descritas son las de la época; no representan una realidad idéntica para todas las mujeres y familias.</p>
+  </section>
+
+  <!-- 6. CONEXIONES -->
+  <section id="conexiones" class="bloque">
+    <p class="num">06</p><h2>Conexiones interdisciplinarias</h2>
+    <p>Esta sección permite relacionar <i>La tía Tula</i> con otras disciplinas y manifestaciones culturales. La finalidad es demostrar que los conflictos de la novela no pertenecen únicamente al ámbito literario, sino que también pueden estudiarse desde la psicología, la filosofía, la historia, la sociología y el arte.</p>
+    <div class="tabs" data-grupo="con">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="k-psi">Psicología</button>
+        <button role="tab" aria-selected="false" data-p="k-filo">Filosofía</button>
+        <button role="tab" aria-selected="false" data-p="k-soc">Historia y sociología</button>
+        <button role="tab" aria-selected="false" data-p="k-arte">Arte</button>
+        <button role="tab" aria-selected="false" data-p="k-lit">Literatura</button>
+        <button role="tab" aria-selected="false" data-p="k-cine">Cine</button>
+      </div>
+
+      <div class="panel" id="k-psi">
+        <h3>6.1. Psicología: análisis de los personajes</h3>
+        <div class="dos"><div>
+          <p>La psicología permite analizar las conductas, emociones y relaciones de los personajes. Para ello podemos utilizar conceptos actuales que ayudan a interpretar sus comportamientos.</p>
+          <p class="nota">Estos conceptos no son diagnósticos clínicos ni fueron utilizados por Unamuno para describir a sus personajes. Son herramientas contemporáneas de interpretación.</p></div>
+          <figure class="foto"><img data-ph="Psicología" src="img/Pscologia.jpg" alt="Psicología y relaciones familiares"><figcaption>Fuente: newstalkzb.co.nz</figcaption></figure></div>
+        <h4>A. Manolita y la parentificación</h4>
+        <p>La parentificación es un concepto utilizado en psicología familiar para describir situaciones en las que un niño o adolescente asume responsabilidades emocionales o prácticas que normalmente corresponden a los adultos.</p>
+        <p>En la novela, Manolita comienza a asumir una responsabilidad importante cuando Gertrudis le encarga cuidar de sus hermanos después de su muerte. Posteriormente, Manolita se convierte en una figura protectora, interviene en los conflictos familiares y procura conservar las enseñanzas de Gertrudis.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> puede relacionarse con la parentificación porque Manolita recibe responsabilidades de cuidado y organización familiar que pueden superar las propias de su etapa de desarrollo.</p>
+        <p>Sin embargo, no debe afirmarse que presenta necesariamente parentificación clínica, ya que la novela no ofrece información suficiente para establecerlo. También puede interpretarse como una transmisión de responsabilidades y un proceso de maduración.</p>
+        <h4>B. Elvira y Enrique: límites en las relaciones afectivas</h4>
+        <p>Elvira y Enrique son hermanastros que mantienen una relación muy cercana. Conversan en secreto, comparten bromas y muestran una confianza que llama la atención de Manolita. Ella considera que algunas de sus muestras de afecto pueden superar los límites de una relación fraternal y les advierte sobre su comportamiento.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> esta situación permite analizar la importancia de establecer límites en las relaciones afectivas, reconocer las intenciones de los demás y comprender cómo las conductas pueden interpretarse de diferentes maneras.</p>
+        <p>También es importante considerar que la cercanía entre ambos no demuestra por sí sola una relación romántica o sexual. El conflicto está construido principalmente desde la preocupación y la interpretación de Manolita.</p>
+        <h4>C. Rosita: búsqueda de validación emocional</h4>
+        <p>En el capítulo XXV, Rosita expresa constantemente su inconformidad y considera que los demás no le prestan suficiente atención. Busca apoyo en Caridad y manifiesta quejas relacionadas con Ramiro. También parece esperar que las personas de su entorno pregunten qué le sucede.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> su comportamiento puede relacionarse con la búsqueda de validación emocional, entendida como la necesidad de sentirse escuchada, reconocida y comprendida por los demás.</p>
+        <p>También permite reflexionar sobre los celos, la inseguridad afectiva y las dificultades para expresar directamente las necesidades emocionales. No significa que Rosita tenga un trastorno psicológico, sino que sus comportamientos permiten estudiar las necesidades afectivas presentes en las relaciones familiares.</p>
+      </div>
+
+      <div class="panel" id="k-filo" hidden>
+        <h3>6.2. Filosofía: existencia, fe y trascendencia</h3>
+        <div class="dos"><div>
+          <p>La novela presenta diferentes cuestiones filosóficas relacionadas con la condición humana.</p>
+          <div class="tabla-wrap"><table>
+            <thead><tr><th scope="col">Concepto</th><th scope="col">Relación con la novela</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Existencia</th><td>Gertrudis busca encontrar un sentido a su vida mediante la familia y la maternidad.</td></tr>
+              <tr><th scope="row">Libertad</th><td>Sus decisiones muestran el conflicto entre sus deseos personales y sus responsabilidades.</td></tr>
+              <tr><th scope="row">Fe y razón</th><td>Sus creencias religiosas conviven con el sufrimiento y las dudas ante la muerte.</td></tr>
+              <tr><th scope="row">Inmortalidad</th><td>La protagonista desea continuar existiendo y espera reunirse con sus seres queridos.</td></tr>
+              <tr><th scope="row">Trascendencia</th><td>Su legado permanece mediante Manolita y las enseñanzas transmitidas a la familia.</td></tr>
+            </tbody></table></div></div>
+          <figure class="foto"><img data-ph="Filosofía" src="img/Filosofia.jpg" alt="Filosofía: existencia y trascendencia"><figcaption>Fuente: sindetsrejse.com</figcaption></figure></div>
+        <p class="interp"><b>Reflexión filosófica:</b> ¿una persona deja de existir completamente cuando muere o puede continuar viviendo mediante los recuerdos, las acciones y las enseñanzas que deja en los demás?</p>
+        <p>Esta pregunta conecta directamente con el pensamiento de Unamuno y con el final de <i>La tía Tula</i>.</p>
+      </div>
+
+      <div class="panel" id="k-soc" hidden>
+        <h3>6.3. Historia y sociología: las figuras cuidadoras en la familia</h3>
+        <div class="dos"><div>
+          <p>Desde la sociología, la novela permite analizar cómo se distribuyen las responsabilidades de cuidado dentro de las familias.</p>
+          <p>A lo largo de la historia, las tías, abuelas, hermanas mayores y otras mujeres han desempeñado funciones importantes en la crianza de los niños, especialmente cuando los padres estaban ausentes, fallecían o no podían asumir todas las responsabilidades.</p>
+          <p>Estas funciones no han sido idénticas en todas las sociedades ni en todas las familias. Sin embargo, muestran la importancia de las redes de apoyo y del cuidado compartido.</p>
+          <p>En <i>La tía Tula</i>, Gertrudis representa precisamente a una figura cuidadora que adquiere autoridad dentro del hogar y se convierte en una referencia para los niños.</p></div>
+          <figure class="foto"><img data-ph="Figuras cuidadoras" src="img/Sociologia.jpg" alt="Figuras cuidadoras en la familia"><figcaption>Fuente: wikioo.org</figcaption></figure></div>
+        <p class="interp"><b>Relación con la actualidad:</b> actualmente también existen familias en las que las abuelas, tías y otros familiares participan activamente en la crianza. Esto demuestra que la formación y protección de los niños puede involucrar a diferentes integrantes de una red familiar.</p>
+      </div>
+
+      <div class="panel" id="k-arte" hidden>
+        <h3>6.4. Arte: relación entre la muerte de Tula y La Piedad de Miguel Ángel</h3>
+        <div class="duo">
+          <figure class="foto"><img data-ph="La Piedad" src="img/Arte.jpg" alt="La Piedad de Miguel Ángel"><figcaption><b>La Piedad – Miguel Ángel.</b> Representación de la Virgen María sosteniendo el cuerpo de Cristo.</figcaption></figure>
+          <figure class="foto"><img data-ph="La maternidad y la muerte" src="img/Maternidad.jpg" alt="Maternidad y muerte"><figcaption><b>La maternidad y la muerte.</b> Representación simbólica del dolor y el vínculo maternal.</figcaption></figure>
+        </div>
+        <p>La obra <i>La Piedad</i>, realizada por Miguel Ángel entre 1498 y 1499, representa a la Virgen María sosteniendo el cuerpo sin vida de Jesucristo después de la crucifixión. Esta escultura constituye una de las representaciones artísticas más reconocidas del dolor maternal, el amor y la muerte.</p>
+        <p>Su relación con <i>La tía Tula</i> puede establecerse mediante una comparación simbólica: ambas obras permiten reflexionar sobre la figura materna frente a la pérdida y la muerte. En el caso de Gertrudis, su despedida de Manolita y de los demás miembros de la familia refleja una preocupación maternal que permanece incluso cuando está a punto de morir.</p>
+        <p class="interp"><b>Interpretación:</b> la relación entre ambas obras no significa que Unamuno se haya inspirado directamente en la escultura para escribir la novela. Se trata de una conexión artística que permite comparar la representación del amor maternal y el sufrimiento.</p>
+      </div>
+
+      <div class="panel" id="k-lit" hidden>
+        <h3>6.5. Literatura: Tula y los personajes matriarcales</h3>
+        <div class="dos"><div>
+          <p>La figura de Gertrudis puede compararse con otros personajes femeninos que ejercen autoridad, transmiten tradiciones y desempeñan funciones fundamentales dentro de sus familias. Una comparación interesante es con Úrsula Iguarán, personaje de <i>Cien años de soledad</i>, de Gabriel García Márquez.</p></div>
+          <figure class="foto"><img data-ph="Úrsula Iguarán" src="img/Literatura.jpg" alt="Cien años de soledad"><figcaption>Fuente: libreriaimaginaria.cl</figcaption></figure></div>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Aspecto</th><th scope="col">Gertrudis – <i>La tía Tula</i></th><th scope="col">Úrsula – <i>Cien años de soledad</i></th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Función familiar</th><td>Cuida y educa a los hijos de su familia.</td><td>Sostiene y organiza a varias generaciones de los Buendía.</td></tr>
+            <tr><th scope="row">Autoridad</th><td>Influye en las decisiones y comportamientos del hogar.</td><td>Es una de las figuras de mayor autoridad en su familia.</td></tr>
+            <tr><th scope="row">Maternidad</th><td>Representa la maternidad espiritual.</td><td>Representa la maternidad biológica y la continuidad familiar.</td></tr>
+            <tr><th scope="row">Memoria</th><td>Transmite enseñanzas que conserva Manolita.</td><td>Conserva la memoria y las tradiciones familiares.</td></tr>
+            <tr><th scope="row">Trascendencia</th><td>Permanece mediante sus enseñanzas.</td><td>Permanece mediante la historia de varias generaciones.</td></tr>
+          </tbody></table></div>
+        <p class="interp"><b>Conclusión comparativa:</b> ambos personajes muestran la importancia de las mujeres en la conservación de la identidad familiar. Sin embargo, mientras Gertrudis construye su maternidad principalmente mediante el cuidado de hijos ajenos, Úrsula ejerce su influencia a través de varias generaciones de descendientes.</p>
+      </div>
+
+      <div class="panel" id="k-cine" hidden>
+        <h3>6.6. Cine: conexiones con otras películas</h3>
+        <p>Las siguientes películas permiten establecer relaciones temáticas con <i>La tía Tula</i>. No son adaptaciones cinematográficas de la novela.</p>
+        <div class="cuadros obras">
+          <article><img class="portada" data-ph="Roma" src="img/Roma.jpg" alt="Roma (2018)"><h4>Roma (2018)</h4><p><b>Director:</b> Alfonso Cuarón.<br><b>Tema:</b> maternidad y cuidado más allá de los vínculos biológicos.</p><p>La película presenta a Cleo, una trabajadora doméstica que desarrolla un fuerte vínculo afectivo con los niños de la familia para la que trabaja. Su relación con <i>La tía Tula</i> se encuentra en la importancia del cuidado, el afecto y la responsabilidad emocional que pueden construirse más allá de los vínculos biológicos. Ambas obras permiten reflexionar sobre el significado de cuidar y proteger a otras personas.</p></article>
+          <article><img class="portada" data-ph="Coco" src="img/Coco.jpg" alt="Coco (2017)"><h4>Coco (2017)</h4><p><b>Estudio:</b> Pixar.<br><b>Tema:</b> memoria familiar y permanencia después de la muerte.</p><p>La película muestra cómo los recuerdos y las historias familiares permiten mantener presente a quienes han fallecido. Esta idea se relaciona con el final de <i>La tía Tula</i>, donde Gertrudis continúa viviendo simbólicamente mediante las enseñanzas, los recuerdos y las acciones de Manolita. Ambas obras destacan la importancia de la memoria como forma de permanencia.</p></article>
+          <article><img class="portada" data-ph="The Truman Show" src="img/Truman.jpg" alt="The Truman Show (1998)"><h4>The Truman Show (1998)</h4><p><b>Director:</b> Peter Weir.<br><b>Tema:</b> identidad, libertad y cuestionamiento de la realidad.</p><p>La película presenta a Truman, un hombre que descubre que su vida ha sido organizada y controlada por otras personas sin que él lo sepa. Su relación con <i>La tía Tula</i> se encuentra en la reflexión sobre la libertad individual, las decisiones personales y la influencia del entorno en la construcción de la identidad. Mientras Truman cuestiona la realidad en la que vive, Gertrudis enfrenta las expectativas sociales y familiares que influyen en su forma de vivir.</p></article>
+        </div>
+        <p class="interp"><b>Conclusión de las conexiones cinematográficas:</b> estas tres películas permiten analizar desde diferentes perspectivas temas presentes en <i>La tía Tula</i>: la maternidad, el cuidado, la memoria, la muerte, la identidad y la libertad. Las comparaciones son temáticas y no implican que las películas estén basadas en la novela.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. REFLEXIONEMOS -->
+  <section id="reflexion" class="bloque">
+    <p class="num">07</p><h2>Reflexionemos</h2>
+    <h3>7.1. Preguntas para reflexionar</h3>
+    <ol class="vineta">
+      <li>¿Consideras que Gertrudis fue una mujer libre al tomar sus propias decisiones o estuvo condicionada por las expectativas sociales de su época?</li>
+      <li>¿Es posible considerar madre a una persona que no tiene hijos biológicos, pero que dedica su vida a cuidarlos y educarlos?</li>
+      <li>¿Hasta qué punto el sacrificio por la familia puede convertirse en una renuncia a la identidad personal?</li>
+      <li>¿Consideras que Manolita tiene la obligación de continuar con el papel que desempeñaba Gertrudis?</li>
+      <li>¿Por qué crees que Gertrudis sentía la necesidad de permanecer en la memoria de su familia?</li>
+      <li>¿Qué diferencias existen entre la forma de entender la maternidad en la época de Unamuno y en la actualidad?</li>
+      <li>¿La religión ayuda a Gertrudis a enfrentar la muerte o también aumenta sus conflictos internos?</li>
+    </ol>
+
+    <h3>7.2. Actividad de comparación: La tía Tula y la sociedad actual</h3>
+    <p>Se propone comparar las responsabilidades familiares y las expectativas sociales de la época de Gertrudis con las que existen actualmente.</p>
+    <div class="tabla-wrap"><table>
+      <thead><tr><th scope="col">Aspecto</th><th scope="col">Época de la novela</th><th scope="col">Actualidad</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Maternidad</th><td>Frecuentemente relacionada con la función familiar de la mujer.</td><td>Puede entenderse desde distintas formas de crianza y cuidado.</td></tr>
+        <tr><th scope="row">Responsabilidad familiar</th><td>Existían expectativas tradicionales sobre los roles de hombres y mujeres.</td><td>Hay mayor diversidad de modelos familiares y distribución de responsabilidades.</td></tr>
+        <tr><th scope="row">Educación femenina</th><td>Las oportunidades eran más limitadas y desiguales.</td><td>Las mujeres cuentan con mayores oportunidades educativas y profesionales.</td></tr>
+        <tr><th scope="row">Religión</th><td>Tenía una fuerte influencia en numerosos ámbitos de la sociedad.</td><td>Su influencia varía según las personas y los contextos sociales.</td></tr>
+        <tr><th scope="row">Cuidado de los niños</th><td>Frecuentemente recaía sobre las mujeres de la familia.</td><td>Puede compartirse entre familiares, instituciones y cuidadores.</td></tr>
+      </tbody></table></div>
+
+    <h3>7.3. Actividad: identifica los símbolos</h3>
+    <p>Relaciona cada elemento con su significado.</p>
+    <div class="actividad" id="actividad">
+      <fieldset><legend>1. Las dos muñecas</legend>
+        <label><input type="radio" name="q1" value="ok"> Infancia, recuerdos y vínculo afectivo</label>
+        <label><input type="radio" name="q1" value="no"> Memoria histórica de España</label></fieldset>
+      <fieldset><legend>2. Las abejas y la colmena</legend>
+        <label><input type="radio" name="q2" value="no"> Conflicto político</label>
+        <label><input type="radio" name="q2" value="ok"> Tradición y continuidad familiar</label></fieldset>
+      <fieldset><legend>3. El purgatorio</legend>
+        <label><input type="radio" name="q3" value="no"> Desigualdad económica</label>
+        <label><input type="radio" name="q3" value="ok"> Sufrimiento y purificación religiosa</label></fieldset>
+      <fieldset><legend>4. Manolita</legend>
+        <label><input type="radio" name="q4" value="no"> Memoria histórica de España</label>
+        <label><input type="radio" name="q4" value="ok"> Transmisión del legado de Gertrudis</label></fieldset>
+      <button type="button" class="comprobar" id="comprobar">Comprobar respuestas</button>
+      <p id="resultado" role="status"></p>
+    </div>
+
+    <h3>7.4. Conclusiones generales del análisis</h3>
+    <p>La novela <i>La tía Tula</i> permite comprender que la familia, la maternidad y la identidad son elementos que se construyen mediante decisiones, responsabilidades y relaciones afectivas.</p>
+    <p>Gertrudis representa una forma de maternidad que no depende exclusivamente de los vínculos biológicos, sino también del compromiso de cuidar, proteger y educar a otras personas. Sin embargo, su historia también invita a cuestionar los sacrificios que una persona puede realizar por su familia y las consecuencias que estos pueden tener sobre su propia identidad.</p>
+    <p>Los capítulos XXII, XXIII, XXIV y XXV muestran que la muerte no elimina necesariamente la influencia de una persona. A través de Manolita, Gertrudis continúa presente en la familia mediante sus enseñanzas y valores.</p>
+    <p>Finalmente, las conexiones con la psicología, la filosofía, la historia, la sociología, el arte y el cine permiten reconocer que los problemas planteados por Unamuno siguen siendo relevantes en la actualidad, especialmente aquellos relacionados con la libertad, la identidad, la responsabilidad afectiva y el sentido de la existencia.</p>
+
+    <h3>7.5. Reflexión final del grupo</h3>
+    <blockquote>La tía Tula nos permite reflexionar sobre el verdadero significado de la maternidad y el papel que desempeñan las personas que, sin tener vínculos biológicos, se convierten en figuras fundamentales para una familia. También nos enseña que el amor y el cuidado pueden dejar huellas que permanecen incluso después de la muerte. Sin embargo, consideramos importante reconocer que ayudar a los demás no debería significar renunciar completamente a nuestros propios sueños, necesidades e identidad. La historia de Gertrudis nos invita a valorar el cuidado familiar, pero también a encontrar un equilibrio entre el bienestar de los demás y el propio.</blockquote>
+  </section>
+
+  <!-- 8. BIBLIOGRAFÍA -->
+  <section id="biblio" class="bloque">
+    <p class="num">08</p><h2>Bibliografía y fuentes consultadas (APA 7)</h2>
+    <h3>8.1. Fuentes sobre Miguel de Unamuno y su obra</h3>
+    <ul class="apa">
+      <li>Unamuno, M. de. (1921). <i>La tía Tula</i>. Editorial Renacimiento.</li>
+      <li>Biblioteca Nacional de España. (s. f.). <i>Unamuno, Miguel de</i>.</li>
+      <li>Casa Museo Unamuno. Universidad de Salamanca. (s. f.). <i>Biografía de Miguel de Unamuno</i>.</li>
+      <li>Martínez, I. (2007). <i>Biografía de Miguel de Unamuno</i>. Grupo de Estudios Peirceanos, Universidad de Navarra.</li>
+    </ul>
+    <h3>8.2. Fuentes sobre el pensamiento filosófico</h3>
+    <ul class="apa">
+      <li>Paredes Martín, M. C. (2000). Conocimiento y realidad en Del sentimiento trágico de la vida. <i>Cuadernos de la Cátedra Miguel de Unamuno, 35</i>.</li>
+      <li>Ferrater Mora, J. (s. f.). Unamuno, Miguel de (1864-1936). <i>Diccionario de Filosofía</i>.</li>
+    </ul>
+    <h3>8.3. Fuentes sobre contexto histórico y social</h3>
+    <ul class="apa">
+      <li>Ministerio de Cultura de España. (s. f.). <i>Contexto histórico y literario: Generación del 98</i>. Red de Bibliotecas de los Archivos Estatales.</li>
+      <li>Montero Díaz, M. (2010). Los primeros pasos hacia la igualdad: mujer y universidad en España (1910-1936). <i>Historia Crítica, (40)</i>, 148-168.</li>
+      <li>Morata Marco, E. M. (2003). La imagen de la maternidad en la España de finales del siglo XIX y principios del XX. <i>Arenal. Revista de Historia de las Mujeres, 10</i>(2), 163-190. <a href="https://doi.org/10.30827/arenal.v10i2.16188">https://doi.org/10.30827/arenal.v10i2.16188</a></li>
+      <li>Blasco Herranz, I. (2008). Mujeres y «cuestión social» en el catolicismo social español: los significados de la «obrera». <i>Arenal. Revista de Historia de las Mujeres, 15</i>(2), 237-268.</li>
+    </ul>
+    <h3>8.4. Fuentes de análisis literario</h3>
+    <ul class="apa">
+      <li>Garrido Ardila, J. A. (2022). Unamuno ante la crítica feminista: el caso de La tía Tula. <i>Cuadernos de la Cátedra Miguel de Unamuno, 50</i>, 29-55. <a href="https://doi.org/10.14201/CCMU2022502955">https://doi.org/10.14201/CCMU2022502955</a></li>
+    </ul>
+    <p class="nota">Esta investigación presenta diferentes interpretaciones sobre el feminismo, la maternidad, la castidad y el amor espiritual en la novela.</p>
+    <h3>8.5. Fuentes para las conexiones artísticas y cinematográficas</h3>
+    <ul class="apa">
+      <li>Vatican News. (2024, 29 de noviembre). <i>En la Basílica de San Pedro la Piedad vuelve a brillar</i>.</li>
+      <li>Cuarón, A. (Director). (2018). <i>Roma</i> [Película]. Esperanto Filmoj; Participant Media.</li>
+      <li>Unkrich, L. (Director). (2017). <i>Coco</i> [Película]. Pixar Animation Studios.</li>
+      <li>Weir, P. (Director). (1998). <i>The Truman Show</i> [Película]. Paramount Pictures.</li>
+      <li>García Márquez, G. (1967). <i>Cien años de soledad</i>. Editorial Sudamericana.</li>
+    </ul>
+  </section>
+</main>
+<!-- ================= LIBRO 2: BODAS DE SANGRE ================= -->
+<main id="libro-bodas" class="libro" hidden>
+  <section id="b-presentacion" class="bloque">
+    <p class="num">Presentación del proyecto</p>
+    <h2>Bodas de sangre, de Federico García Lorca</h2>
+    <p>La presente página web tiene como propósito ampliar el análisis literario de <i>Bodas de sangre</i>, una de las obras teatrales más representativas del escritor español Federico García Lorca, estrenada en 1933.</p>
+    <p>La obra desarrolla una historia marcada por el amor, la pasión, los conflictos familiares, las tradiciones sociales y el destino trágico. A través de sus personajes, Lorca representa una sociedad en la que las normas de honor, las expectativas familiares y las convenciones sociales pueden entrar en conflicto con los sentimientos y deseos individuales.</p>
+    <p>La historia gira alrededor de una boda que termina convirtiéndose en una tragedia debido a la relación entre la Novia y Leonardo, quienes no consiguen desprenderse de sus sentimientos del pasado. Este conflicto desencadena una serie de acontecimientos que conducen a la muerte del Novio y de Leonardo.</p>
+    <p>Mediante este recorrido se estudiará la vida del autor, el contexto histórico y social de la obra, su estructura teatral, los personajes, los símbolos y los principales temas que permiten comprender su significado.</p>
+    <p>También se establecerán conexiones con la psicología, la filosofía, la historia, la sociología, el arte y el cine, para demostrar que los conflictos presentados en la obra continúan siendo relevantes en la actualidad.</p>
+    <div class="objetivo"><strong>Objetivo general</strong><p>Analizar la obra <i>Bodas de sangre</i> desde una perspectiva literaria, histórica, social, psicológica y filosófica, identificando los conflictos de sus personajes, sus símbolos y las circunstancias que conducen al desenlace trágico.</p></div>
+    <h3>Objetivos específicos</h3>
+    <ul class="vineta">
+      <li>Conocer la vida, trayectoria y pensamiento literario de Federico García Lorca.</li>
+      <li>Comprender la estructura de la obra y analizar sus tres actos y siete cuadros.</li>
+      <li>Identificar los temas, personajes, símbolos y recursos dramáticos.</li>
+      <li>Examinar el contexto histórico, cultural y social de España durante la época de Lorca.</li>
+      <li>Analizar los conflictos emocionales de los personajes desde perspectivas psicológicas actuales.</li>
+      <li>Relacionar la obra con otras manifestaciones artísticas, literarias y cinematográficas.</li>
+    </ul>
+  </section>
+
+  <section id="b-autor" class="bloque">
+    <p class="num">02</p><h2>Conozcamos al autor: Federico García Lorca</h2>
+    <h3>2.1. Biografía</h3>
+    <div class="dos">
+      <div>
+        <p>Federico García Lorca nació el 5 de junio de 1898 en Fuente Vaqueros, Granada, España, y fue asesinado en agosto de 1936, al comienzo de la Guerra Civil española.</p>
+        <p>Fue poeta, dramaturgo, músico y uno de los escritores más importantes de la literatura española del siglo XX. Desde pequeño mostró interés por la música, la literatura y las manifestaciones culturales populares de Andalucía.</p>
+        <p>Estudió en la Universidad de Granada y posteriormente se trasladó a Madrid, donde vivió en la Residencia de Estudiantes. Allí entró en contacto con importantes artistas e intelectuales de su época, entre ellos Salvador Dalí y Luis Buñuel.</p>
+        <p>Su producción literaria estuvo profundamente influenciada por la cultura andaluza, las canciones populares, el folclore, el simbolismo y las tradiciones españolas.</p>
+        <p>Lorca también desarrolló una importante actividad teatral. Consideraba que el teatro debía ser un medio de expresión artística y, al mismo tiempo, una herramienta para acercar la cultura a la sociedad.</p>
+        <p>Durante los últimos años de su vida participó en el proyecto teatral universitario La Barraca, que tenía como objetivo llevar obras clásicas del teatro español a diferentes pueblos del país.</p>
+        <p>Su vida terminó trágicamente en 1936, cuando fue detenido y fusilado en los primeros meses de la Guerra Civil española. Su muerte convirtió su figura en uno de los símbolos de la represión cultural y política de aquel periodo.</p>
+      </div>
+      <figure class="foto"><img data-ph="Retrato de Lorca" src="img/federico_garcia.jpg" alt="Retrato de Federico García Lorca"><figcaption>Federico García Lorca · Fuente: lacapitalmdp.com</figcaption></figure>
+    </div>
+    <ol class="linea">
+      <li><b>1898</b> Nace en Fuente Vaqueros, Granada.</li>
+      <li><b>1933</b> Se estrena <i>Bodas de sangre</i> en Madrid.</li>
+      <li><b>1936</b> Es asesinado al comienzo de la Guerra Civil.</li>
+    </ol>
+
+    <h3>2.2. Trayectoria académica y literaria</h3>
+    <p>Federico García Lorca desarrolló su obra en diferentes géneros:</p>
+    <ul class="vineta">
+      <li><b>Poesía:</b> utilizó imágenes simbólicas, elementos de la naturaleza y referencias populares para expresar sentimientos y conflictos humanos.</li>
+      <li><b>Teatro:</b> construyó historias donde los personajes enfrentan conflictos entre sus deseos individuales y las normas sociales.</li>
+      <li><b>Prosa:</b> escribió textos relacionados con sus experiencias, viajes, reflexiones y actividades artísticas.</li>
+    </ul>
+    <p>Una de las características más importantes de su literatura es la combinación de elementos populares y tradicionales con recursos innovadores de la literatura moderna.</p>
+    <p>En sus obras aparecen frecuentemente personajes que desean vivir libremente, pero que se enfrentan a las restricciones de su entorno familiar y social. En <i>Bodas de sangre</i>, esta característica se observa especialmente en la Novia y Leonardo, quienes experimentan un conflicto entre sus sentimientos y las obligaciones sociales.</p>
+
+    <h3>2.3. Obras principales</h3>
+    <div class="cuadros obras">
+      <article><img class="portada" data-ph="Romancero gitano" src="img/Romance_gitano.jpg" alt="Romancero gitano"><h4>Romancero gitano (1928)</h4><p>Colección de poemas que combina la tradición del romance español con elementos simbólicos y populares. Aborda temas como el destino, la libertad, la muerte y la cultura gitana.</p></article>
+      <article><img class="portada" data-ph="Poeta en Nueva York" src="img/Poeta_NY.jpg" alt="Poeta en Nueva York"><h4>Poeta en Nueva York (publicado en 1940)</h4><p>Obra poética que expresa la angustia del ser humano frente a la modernidad, la industrialización, la desigualdad y la deshumanización.</p></article>
+      <article><img class="portada" data-ph="Bodas de sangre" src="img/Bodas_sangre.jpg" alt="Bodas de sangre"><h4>Bodas de sangre (1933)</h4><p>Tragedia que presenta un conflicto entre el amor, la pasión, el honor familiar y las normas sociales, con un desenlace marcado por la muerte.</p></article>
+      <article><img class="portada" data-ph="Yerma" src="img/Yerma.jpg" alt="Yerma"><h4>Yerma (1934)</h4><p>Presenta la frustración de una mujer que desea ser madre y no consigue tener hijos. Explora la maternidad, la presión social y la insatisfacción personal.</p></article>
+      <article><img class="portada" data-ph="La casa de Bernarda Alba" src="img/La_casa.jpg" alt="La casa de Bernarda Alba"><h4>La casa de Bernarda Alba (escrita en 1936)</h4><p>Representa la represión, la autoridad familiar, el control social y la falta de libertad de las mujeres dentro de una familia.</p></article>
+      <article><img class="portada" data-ph="Doña Rosita la soltera" src="img/dona_rosita.jpg" alt="Doña Rosita la soltera"><h4>Doña Rosita la soltera (1935)</h4><p>Aborda el paso del tiempo, la espera amorosa, las expectativas sociales y las consecuencias de vivir condicionada por las promesas de otras personas.</p></article>
+    </div>
+
+    <h3>2.4. El pensamiento literario y social de Lorca</h3>
+    <div class="lista">
+      <details><summary>La libertad individual frente a las normas sociales</summary>
+        <p>Uno de los conflictos más importantes en la literatura de Lorca es la lucha entre los deseos personales y las restricciones impuestas por la sociedad.</p>
+        <p>En <i>Bodas de sangre</i>, la Novia desea seguir sus sentimientos hacia Leonardo, pero también debe responder a las expectativas familiares y sociales relacionadas con el matrimonio y el honor.</p>
+        <p>La obra muestra cómo las convenciones sociales pueden convertirse en una fuerza que condiciona las decisiones individuales.</p></details>
+      <details><summary>El destino y la muerte</summary>
+        <p>La muerte aparece frecuentemente en la literatura de Lorca como una fuerza inevitable que acompaña a los personajes y transforma sus vidas.</p>
+        <p>En <i>Bodas de sangre</i>, el desenlace trágico está anunciado mediante diferentes símbolos, especialmente la Luna y la Mendiga, que contribuyen a crear una atmósfera de fatalidad.</p></details>
+      <details><summary>El amor y la pasión</summary>
+        <p>Lorca presenta el amor como una fuerza intensa que puede generar felicidad, pero también sufrimiento y destrucción cuando entra en conflicto con las obligaciones sociales.</p>
+        <p>La relación entre la Novia y Leonardo demuestra que los sentimientos no desaparecen necesariamente por las decisiones que las personas toman.</p></details>
+      <details><summary>La situación de la mujer</summary>
+        <p>En muchas de sus obras, Lorca representa a mujeres que viven bajo normas familiares y sociales restrictivas. Sus personajes femeninos desean tomar decisiones sobre su vida, su sexualidad y su futuro, pero frecuentemente se encuentran con obstáculos relacionados con el honor, el matrimonio y las tradiciones.</p></details>
+      <details><summary>La cultura popular y el simbolismo</summary>
+        <p>Lorca incorporó canciones, leyendas, imágenes rurales y tradiciones populares en su literatura. En <i>Bodas de sangre</i>, estos elementos permiten transformar una historia familiar en una tragedia de significado universal.</p></details>
+    </div>
+  </section>
+
+  <section id="b-obra" class="bloque">
+    <p class="num">03</p><h2>La obra y sus actos</h2>
+    <h3>3.1. Contexto general de la obra</h3>
+    <div class="dos">
+      <div>
+        <p><i>Bodas de sangre</i> es una tragedia teatral escrita por Federico García Lorca en 1932 y estrenada el 8 de marzo de 1933 en el Teatro Beatriz de Madrid.</p>
+        <p>La historia está inspirada en un acontecimiento real ocurrido en 1928 en el Cortijo del Fraile, en Níjar, provincia de Almería. El suceso fue conocido por medio de la prensa y relataba la fuga de una mujer poco antes de su boda y el posterior asesinato de uno de sus familiares.</p>
+        <p>Lorca tomó como punto de partida este acontecimiento, pero transformó la noticia en una tragedia literaria en la que incorporó elementos poéticos, simbólicos y mitológicos.</p>
+        <p>La obra presenta una historia en la que el amor, la pasión, el honor, la venganza y las tradiciones familiares se enfrentan hasta provocar un desenlace mortal.</p>
+        <p>Uno de los aspectos más importantes es que el conflicto no se limita a un triángulo amoroso. También representa una sociedad rural donde las familias, la reputación, el matrimonio y las antiguas rivalidades tienen una gran influencia sobre las decisiones individuales.</p>
+        <p>La obra está dividida en tres actos y siete cuadros, y combina diálogos en prosa con fragmentos poéticos y canciones populares.</p>
+      </div>
+      <figure class="foto"><img data-ph="Bodas de sangre en escena" src="img/BODAS.jpg" alt="Escena de Bodas de sangre"><figcaption>Fuente: joshazoulaydesign.com</figcaption></figure>
+    </div>
+
+    <h3>3.2. Resumen desarrollado de los tres actos y siete cuadros</h3>
+    <p>A continuación se presenta el desarrollo de cada cuadro, siguiendo la estructura original de la obra.</p>
+    <div class="tabs" data-grupo="bcap">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="b-c1">Acto I · Cuadro 1</button>
+        <button role="tab" aria-selected="false" data-p="b-c2">Acto I · Cuadro 2</button>
+        <button role="tab" aria-selected="false" data-p="b-c3">Acto I · Cuadro 3</button>
+        <button role="tab" aria-selected="false" data-p="b-c4">Acto II · Cuadro 1</button>
+        <button role="tab" aria-selected="false" data-p="b-c5">Acto II · Cuadro 2</button>
+        <button role="tab" aria-selected="false" data-p="b-c6">Acto III · Cuadro 1</button>
+        <button role="tab" aria-selected="false" data-p="b-c7">Acto III · Cuadro 2</button>
+      </div>
+
+      <div class="panel dos" id="b-c1"><div>
+        <h3>Acto I – Cuadro primero <small>Presentación del conflicto</small></h3>
+        <p>La obra comienza en la casa de la Madre, quien conversa con su hijo, el Novio. Este le comunica que tiene intención de casarse con una joven de la comarca y le pide una navaja para cortar uvas.</p>
+        <p>Sin embargo, la Madre siente un profundo rechazo hacia las armas blancas porque su esposo y su hijo mayor fueron asesinados durante una antigua rivalidad con la familia Félix.</p>
+        <p>Durante la conversación, la Madre recuerda las pérdidas que ha sufrido y manifiesta su temor a que la violencia vuelva a destruir a su familia.</p>
+        <p>Posteriormente, el Novio le explica que la Novia había mantenido una relación sentimental con Leonardo, integrante de la familia que la Madre considera enemiga.</p>
+        <p>Aunque la Madre tiene dudas sobre el matrimonio, termina aceptando la decisión de su hijo y ambos comienzan a preparar la boda.</p>
+        <p class="interp"><b>Interpretación:</b> este primer cuadro presenta dos elementos fundamentales: el deseo del Novio de formar una familia y el miedo de la Madre a repetir la tragedia del pasado. Desde el inicio, las armas y las rivalidades familiares funcionan como presagios de muerte.</p></div>
+        <figure class="foto"><img data-ph="Acto I, cuadro 1" src="img/Acto1_cuadro1.jpg" alt="Acto I, cuadro primero"><figcaption>Fuente: tchinick.com</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c2" hidden><div>
+        <h3>Acto I – Cuadro segundo <small>El pasado amoroso</small></h3>
+        <p>La acción se traslada a la casa de Leonardo, donde se encuentran su esposa, su suegra y el niño que ha tenido con su mujer.</p>
+        <p>La Suegra y la Mujer cantan una nana para dormir al pequeño. La canción describe un caballo que no quiere beber agua y que presenta imágenes relacionadas con heridas, sangre y peligro. La canción funciona como una anticipación simbólica de los acontecimientos trágicos que ocurrirán posteriormente.</p>
+        <p>Durante la conversación, la Suegra pregunta por el comportamiento de Leonardo y por sus constantes salidas a caballo. Su esposa manifiesta preocupación porque él parece inquieto y distante.</p>
+        <p>Más adelante, la Mujer descubre que Leonardo continúa interesado en la Novia, a pesar de que ella está comprometida con otro hombre.</p>
+        <p class="interp"><b>Interpretación:</b> este cuadro muestra que Leonardo no ha superado su antigua relación amorosa. También introduce el caballo como símbolo de pasión, deseo y fuerza instintiva, anticipando la huida de los amantes.</p></div>
+        <figure class="foto"><img data-ph="Acto I, cuadro 2" src="img/Acto1_cuadro2.jpg" alt="Acto I, cuadro segundo"><figcaption>Fuente: hdvdarts.com</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c3" hidden><div>
+        <h3>Acto I – Cuadro tercero <small>El matrimonio y las expectativas</small></h3>
+        <p>La escena se desarrolla en la casa de la Novia, donde ella vive con su Padre y recibe la visita de la Criada.</p>
+        <p>El Padre conversa con la Madre y el Novio sobre los preparativos de la boda y las condiciones económicas de las familias. Ambos padres consideran que el matrimonio permitirá unir sus propiedades y asegurar la continuidad familiar.</p>
+        <p>La Madre expresa su deseo de tener nietos y espera que el matrimonio proporcione estabilidad y felicidad a su hijo.</p>
+        <p>Mientras tanto, la Novia demuestra poco entusiasmo ante los preparativos. La Criada sospecha que todavía siente algo por Leonardo, especialmente cuando descubre que él ha estado cerca de la casa.</p>
+        <p>La tensión aumenta porque la Novia intenta ocultar sus sentimientos y mantener la apariencia de que acepta plenamente el matrimonio.</p>
+        <p class="interp"><b>Interpretación:</b> este cuadro muestra cómo el matrimonio también está relacionado con los intereses familiares, económicos y sociales. La Novia se encuentra atrapada entre las expectativas de su familia y sus sentimientos personales.</p></div>
+        <figure class="foto"><img data-ph="Acto I, cuadro 3" src="img/Acto1_cuadro3.jpg" alt="Acto I, cuadro tercero"><figcaption>Fuente: theweek.com</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c4" hidden><div>
+        <h3>Acto II – Cuadro primero <small>La boda y la tensión</small></h3>
+        <p>El segundo acto comienza en la habitación de la Novia, durante los preparativos de la boda. La Criada la ayuda a vestirse y procura que se muestre alegre ante la celebración.</p>
+        <p>Sin embargo, la Novia continúa manifestando inquietud y falta de entusiasmo. La Criada intenta animarla, pero descubre que Leonardo ha llegado a la casa antes de la ceremonia.</p>
+        <p>Durante el encuentro, Leonardo y la Novia mantienen una conversación cargada de tensión emocional. Ambos reconocen que todavía existen sentimientos entre ellos, aunque intentan justificar sus decisiones y recordar las circunstancias que los separaron.</p>
+        <p>Leonardo le reclama que esté a punto de casarse con otro hombre, mientras ella intenta defender su decisión. Finalmente, la Novia se prepara para la ceremonia y procura cumplir con las expectativas familiares.</p>
+        <p class="interp"><b>Interpretación:</b> este cuadro muestra el conflicto interno de la Novia y la imposibilidad de Leonardo de aceptar que la relación terminó. El matrimonio comienza a convertirse en una obligación social que entra en contradicción con los sentimientos de los protagonistas.</p></div>
+        <figure class="foto"><img data-ph="Acto II, cuadro 1" src="img/Acto2_cuadro1.jpg" alt="Acto II, cuadro primero"><figcaption>Fuente: complejoteatral.gob.ar</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c5" hidden><div>
+        <h3>Acto II – Cuadro segundo <small>La ruptura y la huida</small></h3>
+        <p>En este cuadro se desarrolla la celebración de la boda. Los invitados cantan y bailan, celebrando la unión de los recién casados.</p>
+        <p>Al principio, el ambiente es festivo y parece que el matrimonio se ha realizado con normalidad. Sin embargo, la Novia se encuentra cada vez más inquieta y decide retirarse. Leonardo también desaparece de la celebración. Poco después, la Mujer de Leonardo descubre que su esposo y la Novia han escapado juntos a caballo.</p>
+        <p>La noticia provoca una gran conmoción entre los invitados y especialmente en la Madre, quien interpreta lo sucedido como una nueva ofensa contra su familia.</p>
+        <p>El Novio, lleno de ira y humillación, decide perseguir a los fugitivos. La Madre, a pesar de su miedo a la violencia, lo impulsa a buscar a la pareja.</p>
+        <p class="interp"><b>Interpretación:</b> este cuadro representa el momento en que el conflicto emocional se transforma en una tragedia familiar. La huida de la Novia y Leonardo destruye la celebración y activa el ciclo de venganza que la Madre tanto temía.</p></div>
+        <figure class="foto"><img data-ph="Acto II, cuadro 2" src="img/Acto2_cuadro2.jpg" alt="Acto II, cuadro segundo"><figcaption>Fuente: usf.edu</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c6" hidden><div>
+        <h3>Acto III – Cuadro primero <small>El destino trágico</small></h3>
+        <p>La acción se traslada a un bosque durante la noche. Tres Leñadores conversan sobre la huida de Leonardo y la Novia, mientras reflexionan sobre la fuerza de la sangre y el destino.</p>
+        <p>En este espacio aparece la Luna, representada como un personaje sobrenatural que desea iluminar el bosque para que los fugitivos sean encontrados. También aparece una Mendiga, que representa simbólicamente a la Muerte. Su presencia contribuye a crear una atmósfera de fatalidad.</p>
+        <p>La Luna y la Mendiga colaboran para que el Novio pueda encontrar a los amantes. Cuando finalmente se encuentran Leonardo y el Novio, ambos se enfrentan y terminan matándose mutuamente con sus armas.</p>
+        <p>La Novia presencia las consecuencias de la persecución y queda atrapada en el dolor de haber provocado, junto con Leonardo, una tragedia que termina destruyendo a varias personas.</p>
+        <p class="interp"><b>Interpretación:</b> el bosque representa un espacio simbólico donde desaparecen las reglas de la vida cotidiana y domina la fatalidad. La Luna y la Muerte convierten el desenlace en una tragedia que parece inevitable.</p></div>
+        <figure class="foto"><img data-ph="Acto III, cuadro 1" src="img/Acto3_cuadro1.jpg" alt="Acto III, cuadro primero"><figcaption>Fuente: infobae.com</figcaption></figure></div>
+
+      <div class="panel dos" id="b-c7" hidden><div>
+        <h3>Acto III – Cuadro segundo <small>El dolor y las consecuencias</small></h3>
+        <p>El último cuadro vuelve al espacio doméstico de la Madre, donde dos muchachas realizan labores relacionadas con la preparación de lana y cantan canciones que evocan la muerte. La Mendiga anuncia que Leonardo y el Novio han muerto.</p>
+        <p>La Madre recibe la noticia con un dolor profundo. Después de haber perdido anteriormente a su esposo y a su hijo mayor, ahora también ha perdido a su último hijo.</p>
+        <p>La Novia regresa y se presenta ante la Madre, quien la recibe con rechazo y sufrimiento. La joven intenta explicar que no huyó por desprecio hacia el Novio, sino porque sus sentimientos por Leonardo fueron más fuertes que su voluntad.</p>
+        <p>La Novia afirma que desea morir y que no puede encontrar tranquilidad después de lo sucedido. También insiste en que conserva su honra, aunque reconoce su responsabilidad en la tragedia.</p>
+        <p>Finalmente, la Madre y la Novia permanecen juntas, unidas por el dolor y la pérdida. La obra termina con una lamentación sobre los cuchillos y la muerte de los dos hombres.</p>
+        <p class="interp"><b>Interpretación:</b> el final demuestra que la violencia y la venganza no solucionan los conflictos, sino que destruyen a las familias. La Madre y la Novia quedan unidas por el sufrimiento, aunque sus experiencias y responsabilidades sean diferentes.</p></div>
+        <figure class="foto"><img data-ph="Acto III, cuadro 2" src="img/Acto3_cuadro2.jpg" alt="Acto III, cuadro segundo"><figcaption>Fuente: complejoteatral.gob.ar</figcaption></figure></div>
+    </div>
+
+    <h3>3.3. ¿Qué representan los tres actos en conjunto?</h3>
+    <p>La estructura de <i>Bodas de sangre</i> presenta una evolución progresiva del conflicto:</p>
+    <div class="tabla-wrap"><table>
+      <thead><tr><th scope="col">Acto</th><th scope="col">Función narrativa</th><th scope="col">Acontecimiento central</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Acto I</th><td>Planteamiento</td><td>Se presentan las familias, el pasado de Leonardo y los preparativos del matrimonio.</td></tr>
+        <tr><th scope="row">Acto II</th><td>Nudo</td><td>Se celebra la boda y ocurre la huida de Leonardo y la Novia.</td></tr>
+        <tr><th scope="row">Acto III</th><td>Desenlace</td><td>La persecución termina con la muerte de Leonardo y el Novio.</td></tr>
+      </tbody></table></div>
+    <p>La estructura también presenta una transformación del ambiente:</p>
+    <ul class="vineta">
+      <li><b>Primer acto:</b> predomina el mundo familiar y cotidiano.</li>
+      <li><b>Segundo acto:</b> el ambiente festivo se transforma progresivamente en tensión y tragedia.</li>
+      <li><b>Tercer acto:</b> aparecen elementos sobrenaturales y simbólicos que representan el destino y la muerte.</li>
+    </ul>
+    <p>La obra comienza y termina en el entorno de la Madre. Esta estructura circular refuerza la idea de que la tragedia vuelve a golpear a una familia que ya había sufrido pérdidas anteriores.</p>
+  </section>
+
+  <section id="b-analisis" class="bloque">
+    <p class="num">04</p><h2>Análisis literario</h2>
+    <div class="tabs" data-grupo="bana">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="b-temas">Temas</button>
+        <button role="tab" aria-selected="false" data-p="b-pers">Personajes</button>
+        <button role="tab" aria-selected="false" data-p="b-sec">Secundarios y simbólicos</button>
+        <button role="tab" aria-selected="false" data-p="b-estilo">Estilo</button>
+        <button role="tab" aria-selected="false" data-p="b-simb">Símbolos</button>
+        <button role="tab" aria-selected="false" data-p="b-citas">Citas</button>
+      </div>
+
+      <div class="panel" id="b-temas">
+        <h3>4.1. Temas principales</h3>
+        <div class="cuadros">
+          <article><h4>El amor y la pasión</h4><p>Es uno de los temas centrales de la obra. Leonardo y la Novia mantienen sentimientos que no han desaparecido a pesar de que sus vidas han tomado caminos diferentes.</p><p>Su relación representa una pasión que entra en conflicto con las responsabilidades familiares y las normas sociales. Lorca presenta el amor como una fuerza intensa que puede llevar a las personas a tomar decisiones impulsivas y asumir consecuencias dolorosas.</p></article>
+          <article><h4>El honor familiar</h4><p>El honor tiene una gran importancia en la sociedad representada en la obra. La Madre considera que la huida de la Novia constituye una deshonra para su familia y una ofensa que debe ser respondida.</p><p>El comportamiento de los personajes está condicionado por la preocupación sobre lo que dirán los demás y por la reputación de sus familias.</p></article>
+          <article><h4>La muerte y el destino</h4><p>La muerte está presente desde el inicio mediante las referencias a las armas, las antiguas rivalidades y los temores de la Madre.</p><p>Los acontecimientos parecen avanzar hacia un desenlace inevitable, especialmente después de que Leonardo y la Novia escapan juntos.</p></article>
+          <article><h4>La tradición y las normas sociales</h4><p>La obra representa una sociedad donde el matrimonio, la familia, la propiedad y la reputación tienen un gran valor.</p><p>La Novia se enfrenta a las expectativas de su entorno, mientras que la Madre y el Padre consideran que el matrimonio es una forma de asegurar la estabilidad familiar.</p></article>
+          <article><h4>La libertad individual</h4><p>La Novia y Leonardo representan el deseo de vivir de acuerdo con los sentimientos personales, incluso cuando estos entran en contradicción con las obligaciones sociales.</p><p>Sin embargo, la obra también demuestra que las decisiones individuales pueden afectar profundamente a otras personas.</p></article>
+          <article><h4>La venganza y la violencia</h4><p>La rivalidad entre las familias y el deseo de defender el honor generan un ciclo de violencia que termina destruyendo a los protagonistas.</p></article>
+        </div>
+      </div>
+
+      <div class="panel" id="b-pers" hidden>
+        <h3>4.2. Personajes principales</h3>
+        <ul class="personajes">
+          <li><img data-ph="La Madre" src="img/Madre.jpg" alt="La Madre"><div><strong>La Madre</strong>Es la madre del Novio. Ha sufrido la pérdida de su esposo y de su hijo mayor, quienes fueron asesinados por miembros de la familia Félix. Vive con temor a que la violencia vuelva a destruir su hogar. Representa el dolor, la memoria, el apego familiar y el deseo de proteger a sus seres queridos.</div></li>
+          <li><img data-ph="La Novia" src="img/Novia.jpg" alt="La Novia"><div><strong>La Novia</strong>Es la mujer que está a punto de casarse con el Novio, pero continúa sintiendo una fuerte atracción por Leonardo. Se encuentra dividida entre sus sentimientos y las expectativas sociales. Representa el conflicto entre la libertad personal, el deseo y las normas familiares.</div></li>
+          <li><img data-ph="Leonardo" src="img/Leonardo.jpg" alt="Leonardo"><div><strong>Leonardo</strong>Es el antiguo pretendiente de la Novia y el único personaje principal que tiene nombre propio. Está casado y tiene un hijo, pero no ha superado su relación con la Novia. Representa la pasión, el deseo y el conflicto entre las responsabilidades familiares y los sentimientos.</div></li>
+          <li><img data-ph="El Novio" src="img/Novio.jpg" alt="El Novio"><div><strong>El Novio</strong>Es el hijo de la Madre y el hombre que desea casarse con la Novia. Busca construir una familia y mantener la estabilidad del hogar. Representa las expectativas del matrimonio, la confianza familiar y posteriormente el honor herido y la venganza.</div></li>
+          <li><img data-ph="El Padre de la Novia" src="img/Padre_novia.jpg" alt="El Padre de la Novia"><div><strong>El Padre de la Novia</strong>Es el padre de la protagonista. Considera que el matrimonio permitirá unir las propiedades y fortalecer la posición económica de ambas familias. Representa la importancia de los intereses familiares y materiales.</div></li>
+        </ul>
+      </div>
+
+      <div class="panel" id="b-sec" hidden>
+        <h3>4.3. Personajes secundarios y simbólicos</h3>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Personaje</th><th scope="col">Función dentro de la obra</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">La Mujer de Leonardo</th><td>Esposa de Leonardo y madre de su hijo. Representa las consecuencias familiares de la infidelidad y el abandono.</td></tr>
+            <tr><th scope="row">La Suegra</th><td>Madre de la Mujer de Leonardo. Participa en la nana que anticipa la tragedia.</td></tr>
+            <tr><th scope="row">La Criada</th><td>Acompaña a la Novia y conoce sus sentimientos hacia Leonardo.</td></tr>
+            <tr><th scope="row">La Vecina</th><td>Proporciona información sobre las familias y sus antecedentes.</td></tr>
+            <tr><th scope="row">Los Leñadores</th><td>Comentan la huida y representan una voz colectiva que reflexiona sobre el destino.</td></tr>
+            <tr><th scope="row">La Luna</th><td>Personaje alegórico que contribuye a provocar el encuentro mortal.</td></tr>
+            <tr><th scope="row">La Mendiga</th><td>Representa simbólicamente a la Muerte y guía al Novio hacia los fugitivos.</td></tr>
+            <tr><th scope="row">Las Muchachas</th><td>Participan en los cantos del último cuadro y refuerzan el ambiente de tragedia.</td></tr>
+          </tbody></table></div>
+      </div>
+
+      <div class="panel" id="b-estilo" hidden>
+        <h3>4.4. Estilo narrativo y teatral</h3>
+        <p>Federico García Lorca utiliza un estilo teatral que combina elementos realistas, poéticos y simbólicos. Entre sus características destacan:</p>
+        <ul class="vineta">
+          <li><b>Lenguaje poético:</b> utiliza metáforas, comparaciones e imágenes para expresar emociones y anticipar acontecimientos.</li>
+          <li><b>Mezcla de prosa y verso:</b> alterna conversaciones cotidianas con fragmentos poéticos y canciones.</li>
+          <li><b>Simbolismo:</b> utiliza elementos como la Luna, el caballo, la sangre y los cuchillos para representar conceptos más profundos.</li>
+          <li><b>Personajes colectivos:</b> incorpora grupos como los Leñadores y las Muchachas, que comentan y acompañan el desarrollo de la tragedia.</li>
+          <li><b>Presagios:</b> desde el comienzo aparecen señales que anticipan el desenlace.</li>
+          <li><b>Tragedia:</b> la acción conduce a un final doloroso donde los conflictos personales y familiares terminan en muerte.</li>
+        </ul>
+      </div>
+
+      <div class="panel" id="b-simb" hidden>
+        <h3>4.5. Símbolos presentes en la obra</h3>
+        <p>Los símbolos son fundamentales para comprender el significado de <i>Bodas de sangre</i>. Lorca utiliza objetos y elementos naturales para representar emociones, fuerzas y acontecimientos que no siempre se expresan directamente mediante los diálogos.</p>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Símbolo</th><th scope="col">Significado e interpretación</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">La Luna</th><td>Representa la muerte y la fatalidad. Su luz permite que los fugitivos sean encontrados.</td></tr>
+            <tr><th scope="row">La Mendiga</th><td>Simboliza la Muerte y acompaña el desarrollo del desenlace trágico.</td></tr>
+            <tr><th scope="row">El caballo</th><td>Representa la pasión, la energía instintiva, el deseo y la fuerza que impulsa a Leonardo.</td></tr>
+            <tr><th scope="row">La sangre</th><td>Representa la vida, la pasión, los vínculos familiares y también la muerte violenta.</td></tr>
+            <tr><th scope="row">El cuchillo y la navaja</th><td>Son presagios de violencia, venganza y muerte.</td></tr>
+            <tr><th scope="row">El bosque</th><td>Representa un espacio misterioso donde predominan las fuerzas naturales y el destino.</td></tr>
+            <tr><th scope="row">El agua</th><td>Se relaciona con la vida, la fertilidad y, en determinadas escenas, con el contraste entre la tranquilidad y la inquietud.</td></tr>
+            <tr><th scope="row">El color blanco</th><td>Se relaciona con la boda, la pureza y las expectativas sociales, aunque contrasta con la tragedia posterior.</td></tr>
+            <tr><th scope="row">El color rojo</th><td>Se asocia con la sangre, la pasión, la vida y la muerte.</td></tr>
+          </tbody></table></div>
+        <figure class="foto"><img data-ph="Símbolos de la obra" src="img/Bosque.jpg"  alt="Símbolos de Bodas de sangre"><figcaption>Fuente: burjcdigital.urjc.es</figcaption></figure>
+        <figure class="foto"><img data-ph="Símbolos de la obra"  src="img/Caballo.jpg"  alt="Símbolos de Bodas de sangre"><figcaption>Fuente: burjcdigital.urjc.es</figcaption></figure>
+        <figure class="foto"><img data-ph="Símbolos de la obra"  src="img/Rosa.jpg" alt="Símbolos de Bodas de sangre"><figcaption>Fuente: burjcdigital.urjc.es</figcaption></figure>
+        <figure class="foto"><img data-ph="Símbolos de la obra"  src="img/Navaja.jpg" alt="Símbolos de Bodas de sangre"><figcaption>Fuente: burjcdigital.urjc.es</figcaption></figure>
+      </div>
+
+      <div class="panel" id="b-citas" hidden>
+        <h3>4.6. Citas relevantes para el análisis</h3>
+        <p>Las siguientes expresiones breves permiten identificar los temas fundamentales de la obra. Para una cita académica completa, debes añadir el número de página de la edición que utilices.</p>
+        <blockquote>«La navaja, la navaja...»</blockquote><p><b>Acto I, cuadro primero – La Madre.</b></p>
+        <p class="interp"><b>Interpretación:</b> representa el miedo de la Madre a la violencia y anticipa el desenlace mortal de la obra.</p>
+        <blockquote>«¡Ay, caballo grande...»</blockquote><p><b>Acto I, cuadro segundo – Nana.</b></p>
+        <p class="interp"><b>Interpretación:</b> el caballo representa la pasión y la fuerza instintiva que impulsan a Leonardo.</p>
+        <blockquote>«La luna deja un cuchillo...»</blockquote><p><b>Acto III, cuadro primero – La Luna.</b></p>
+        <p class="interp"><b>Interpretación:</b> relaciona la luz lunar con la muerte y la violencia que se aproxima.</p>
+        <blockquote>«¡Porque yo me fui con el otro!»</blockquote><p><b>Acto III, cuadro segundo – La Novia.</b></p>
+        <p class="interp"><b>Interpretación:</b> expresa el reconocimiento de la decisión tomada y la responsabilidad emocional que siente después de la tragedia.</p>
+        <p class="nota">Fuente: <i>Bodas de sangre</i>, Federico García Lorca.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="b-contexto" class="bloque">
+    <p class="num">05</p><h2>La obra y su contexto histórico, social, cultural y político</h2>
+    <div class="lista">
+      <details open><summary>5.1. España de finales del siglo XIX y principios del siglo XX</summary>
+        <p>La obra de Federico García Lorca se desarrolla en un periodo de importantes transformaciones políticas, económicas y culturales en España.</p>
+        <p>Durante las primeras décadas del siglo XX, el país presentaba grandes diferencias entre las zonas urbanas y rurales. Mientras algunas ciudades experimentaban procesos de modernización, muchas comunidades campesinas continuaban viviendo bajo estructuras tradicionales, con importantes desigualdades económicas y sociales.</p>
+        <p>En Andalucía, especialmente en las zonas rurales, la propiedad de la tierra estaba frecuentemente concentrada en manos de grandes propietarios. Muchos trabajadores dependían de las actividades agrícolas y vivían en condiciones económicas difíciles.</p>
+        <p>En este contexto, la familia, el matrimonio, la religión y la reputación social tenían una influencia importante en la vida de las personas.</p>
+        <p><i>Bodas de sangre</i> representa un ambiente rural en el que las relaciones familiares, las propiedades y las tradiciones condicionan las decisiones de los personajes.</p>
+        <p>La obra no pretende describir a toda la sociedad española de manera uniforme, sino representar un entorno rural concreto y convertir sus conflictos en una tragedia de alcance universal.</p>
+        <figure class="foto"><img data-ph="España rural" src="img/Espana_finales.jpg" alt="España rural a inicios del siglo XX"><figcaption>Fuente: juntadeandalucia.es</figcaption></figure></details>
+
+      <details><summary>5.2. El acontecimiento real que inspiró la obra</summary>
+        <p>Uno de los aspectos más interesantes de <i>Bodas de sangre</i> es que su argumento tiene como punto de partida un acontecimiento real conocido como el Crimen de Níjar, ocurrido el 22 de julio de 1928 en las inmediaciones del Cortijo del Fraile, en Almería.</p>
+        <p>El acontecimiento involucró a Francisca Cañadas Morales, una joven que debía casarse con Casimiro Pérez Pino, pero que decidió huir con su primo Francisco Montes Cañadas poco antes de la celebración.</p>
+        <p>Durante la huida, la pareja fue interceptada y Francisco Montes recibió un disparo mortal. Francisca sobrevivió al ataque. La noticia fue difundida por la prensa y llamó la atención por los conflictos amorosos y familiares que rodearon el acontecimiento.</p>
+        <p>Federico García Lorca tomó esta historia como inspiración para construir una tragedia teatral. Sin embargo, modificó los acontecimientos, los personajes y las circunstancias para desarrollar una obra literaria con mayor profundidad simbólica.</p>
+        <p class="interp">Es importante comprender que la Novia, Leonardo y el Novio son personajes literarios, no reproducciones exactas de las personas involucradas en el acontecimiento histórico.</p>
+        <figure class="foto"><img data-ph="Cortijo del Fraile" src="img/Inspiracion_obra.jpg" alt="Cortijo del Fraile, Níjar"><figcaption>Fuente: diariodealmeria.es</figcaption></figure></details>
+
+      <details><summary>5.3. La Generación del 27 y sus características</summary>
+        <p>Federico García Lorca fue uno de los representantes más destacados de la Generación del 27, un grupo de escritores que renovó la literatura española mediante la combinación de las tradiciones populares con las nuevas corrientes artísticas y literarias.</p>
+        <p>Entre sus representantes se encuentran Federico García Lorca, Rafael Alberti, Luis Cernuda, Pedro Salinas, Jorge Guillén, Vicente Aleixandre y Dámaso Alonso.</p>
+        <p>Entre las principales características de este grupo destacan:</p>
+        <ul class="vineta">
+          <li>La combinación de tradición y modernidad.</li>
+          <li>El uso de metáforas e imágenes poéticas.</li>
+          <li>La experimentación con diferentes formas literarias.</li>
+          <li>La influencia de las vanguardias artísticas.</li>
+          <li>La recuperación de elementos de la literatura popular española.</li>
+          <li>La exploración de los sentimientos y conflictos humanos.</li>
+        </ul>
+        <p>En <i>Bodas de sangre</i>, Lorca combina canciones populares, elementos tradicionales andaluces y recursos poéticos modernos para construir una tragedia que supera el simple relato de un conflicto amoroso.</p>
+        <figure class="foto"><img data-ph="Generación del 27" src="img/generacion27.jpg" alt="Generación del 27"><figcaption>Fuente: universolorca.com</figcaption></figure></details>
+
+      <details><summary>5.4. La situación de las mujeres y sus posibilidades sociales</summary>
+        <p>Durante las primeras décadas del siglo XX, muchas mujeres españolas enfrentaban importantes limitaciones sociales, económicas y educativas. En determinados sectores de la sociedad predominaba la expectativa de que las mujeres debían dedicarse principalmente al matrimonio, la maternidad y el cuidado del hogar.</p>
+        <p>Además, la reputación familiar y las normas relacionadas con la sexualidad femenina podían ejercer una fuerte presión sobre sus decisiones personales. En los ambientes rurales, las tradiciones familiares y las condiciones económicas también influían en la elección de pareja y en la organización de los matrimonios.</p>
+        <p>Sin embargo, las experiencias de las mujeres no eran iguales para todas. Las oportunidades dependían de su clase social, educación, situación económica y lugar de residencia.</p>
+        <p>En <i>Bodas de sangre</i>, la Novia representa el conflicto entre sus deseos personales y las expectativas sociales relacionadas con el matrimonio. Por su parte, la Madre representa una figura femenina que ha construido su vida alrededor de la familia, la maternidad y la protección de sus hijos.</p>
+        <p>Ambos personajes muestran diferentes formas de experimentar las responsabilidades y limitaciones que podía enfrentar una mujer en aquella sociedad.</p>
+        <figure class="foto"><img data-ph="Mujeres rurales" src="img/mujeres_situacion.jpg" alt="Mujeres en la España rural"><figcaption>Fuente: historiayculturadeadamuz.blogspot.com</figcaption></figure></details>
+
+      <details><summary>5.5. La importancia del matrimonio, la familia y el honor</summary>
+        <p>En el contexto social representado por Lorca, el matrimonio no era solamente una decisión sentimental. También podía estar relacionado con intereses económicos, alianzas familiares, propiedades y continuidad de los apellidos.</p>
+        <p>En la obra, el Padre de la Novia y la Madre del Novio consideran que el matrimonio puede fortalecer la posición de ambas familias. La conversación sobre las tierras y las propiedades demuestra que la unión matrimonial también tiene una dimensión económica.</p>
+        <p>Por otra parte, el honor familiar ocupa un lugar central. La huida de la Novia y Leonardo es interpretada como una deshonra que afecta a las familias y provoca una reacción violenta. La Madre, especialmente, considera que la reputación y la memoria de su familia han sido nuevamente atacadas.</p>
+        <p class="interp"><b>Relación con la actualidad:</b> la obra permite reflexionar sobre la diferencia entre construir una relación por decisión propia y hacerlo por presión familiar, económica o social. También invita a cuestionar la idea de que el honor de una familia deba defenderse mediante la violencia.</p>
+        <figure class="foto"><img data-ph="Matrimonio y honor" src="img/Matrimonio_importancia.jpg" alt="Matrimonio y honor familiar"><figcaption>Fuente: jamilenaenelrecuerdo.blogspot.com</figcaption></figure></details>
+
+      <details><summary>5.6. La influencia de la religión católica</summary>
+        <p>La religión católica tenía una presencia importante en la sociedad española durante la época en que Lorca escribió <i>Bodas de sangre</i>. La Iglesia influía en diferentes aspectos de la vida social, como las celebraciones matrimoniales, las normas morales, la educación y las costumbres familiares.</p>
+        <p>En la obra, la boda se presenta como una ceremonia social y religiosa que simboliza la unión de dos personas y sus familias.</p>
+        <p>Sin embargo, la historia muestra una contradicción: aunque la celebración representa la unión matrimonial y el establecimiento de una nueva familia, los sentimientos de la Novia hacia Leonardo impiden que esa unión se desarrolle de manera estable.</p>
+        <p>La religión aparece principalmente como parte del contexto cultural y de las tradiciones de la comunidad. No obstante, el conflicto central de la obra no es una discusión teológica, sino la tensión entre los sentimientos individuales, el matrimonio, el honor y las normas sociales.</p>
+        <figure class="foto"><img data-ph="Religión y boda" src="img/religion_influencia.jpg" alt="La religión y la boda"></figure></details>
+
+      <details><summary>5.7. La mujer, la libertad y el honor en los personajes femeninos</summary>
+        <p>Los personajes femeninos de <i>Bodas de sangre</i> permiten analizar diferentes formas de vivir la maternidad, el matrimonio, el amor y la autoridad.</p>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Personaje</th><th scope="col">Representación social y femenina</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">La Madre</th><td>Representa la protección familiar, la maternidad, el dolor y la defensa del honor.</td></tr>
+            <tr><th scope="row">La Novia</th><td>Representa el conflicto entre el deseo individual y las expectativas sociales.</td></tr>
+            <tr><th scope="row">La Mujer de Leonardo</th><td>Representa las consecuencias del abandono y la infidelidad dentro del matrimonio.</td></tr>
+            <tr><th scope="row">La Suegra</th><td>Representa la transmisión de las costumbres y tradiciones familiares.</td></tr>
+            <tr><th scope="row">La Criada</th><td>Representa una voz cercana a la Novia, capaz de observar sus conflictos y advertir sobre sus consecuencias.</td></tr>
+          </tbody></table></div>
+        <p>Una interpretación importante es que Lorca no presenta a todas las mujeres como víctimas pasivas. Algunas tienen autoridad, expresan sus opiniones y toman decisiones, aunque sus posibilidades estén condicionadas por el entorno social.</p>
+        <p>La Novia es especialmente interesante porque intenta defender su libertad emocional, pero termina enfrentándose a las consecuencias de sus decisiones y a las normas de una sociedad que juzga su comportamiento.</p></details>
+    </div>
+  </section>
+
+  <section id="b-conexiones" class="bloque">
+    <p class="num">06</p><h2>Conexiones interdisciplinarias</h2>
+    <p>Esta sección permite relacionar <i>Bodas de sangre</i> con otras disciplinas y manifestaciones culturales. Los conflictos de la obra pueden comprenderse desde diferentes perspectivas, porque involucran emociones, comportamientos, relaciones familiares, valores sociales y representaciones artísticas.</p>
+    <div class="tabs" data-grupo="bcon">
+      <div class="pestanas" role="tablist">
+        <button role="tab" aria-selected="true" data-p="bk-psi">Psicología</button>
+        <button role="tab" aria-selected="false" data-p="bk-filo">Filosofía</button>
+        <button role="tab" aria-selected="false" data-p="bk-soc">Historia y sociología</button>
+        <button role="tab" aria-selected="false" data-p="bk-arte">Arte</button>
+        <button role="tab" aria-selected="false" data-p="bk-lit">Literatura</button>
+        <button role="tab" aria-selected="false" data-p="bk-cine">Cine</button>
+      </div>
+
+      <div class="panel" id="bk-psi">
+        <h3>6.1. Psicología: análisis de los personajes</h3>
+        <div class="dos"><div>
+          <p>La psicología permite analizar los pensamientos, emociones y comportamientos de los personajes. En esta sección utilizaremos conceptos actuales para interpretar sus conductas.</p>
+          <p class="nota">No se trata de diagnósticos psicológicos realizados por el autor ni de evaluaciones clínicas de personajes ficticios.</p></div>
+          <figure class="foto"><img data-ph="Psicología" src="img/Pscologia2.jpg" alt="Psicología de los personajes"><figcaption>Fuente: theatre.uoa.gr</figcaption></figure></div>
+        <h4>A. La Madre: duelo, miedo y protección familiar</h4>
+        <p>La Madre ha experimentado la pérdida violenta de su esposo y de su hijo mayor. Estas experiencias influyen en su manera de interpretar los acontecimientos y en su temor constante a las armas.</p>
+        <p>Desde una perspectiva psicológica, su comportamiento puede relacionarse con los procesos de duelo y con el miedo anticipatorio, que aparece cuando una persona experimenta preocupación intensa ante la posibilidad de que ocurra nuevamente un acontecimiento doloroso. En la obra, la Madre teme perder a su último hijo y considera que la violencia puede repetirse debido a las antiguas rivalidades familiares.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> su conducta demuestra cómo las experiencias traumáticas pueden influir en la percepción del peligro, en las decisiones personales y en las relaciones familiares. No obstante, no podemos afirmar que tenga un trastorno de estrés postraumático, ya que la obra no ofrece información clínica suficiente para establecerlo.</p>
+        <h4>B. La Novia: conflicto emocional y disonancia cognitiva</h4>
+        <p>La Novia se encuentra dividida entre dos situaciones: por un lado, desea cumplir con el matrimonio que ha aceptado y, por otro, continúa sintiendo una fuerte atracción por Leonardo.</p>
+        <p>Esta situación puede relacionarse con la disonancia cognitiva, concepto psicológico desarrollado por Leon Festinger. Ocurre cuando una persona experimenta tensión al mantener pensamientos, valores o decisiones que entran en contradicción. En la obra, la Novia intenta justificar su matrimonio y, al mismo tiempo, no consigue desprenderse de sus sentimientos por Leonardo.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> su comportamiento permite analizar el conflicto entre las decisiones racionales, las emociones y las expectativas sociales.</p>
+        <h4>C. Leonardo: impulsividad y conflicto entre deseo y responsabilidad</h4>
+        <p>Leonardo está casado y tiene un hijo, pero continúa buscando a la Novia y finalmente escapa con ella. Su comportamiento muestra una contradicción entre las responsabilidades que ha asumido y sus deseos personales.</p>
+        <p>Desde la psicología, puede analizarse mediante conceptos como la impulsividad y la dificultad para regular los impulsos emocionales. La impulsividad se relaciona con la tendencia a actuar rápidamente sin considerar suficientemente las consecuencias de una decisión.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> Leonardo representa el conflicto entre el deseo inmediato y las responsabilidades familiares, especialmente cuando sus decisiones terminan afectando a su esposa, su hijo y otras personas. Esto no significa que el personaje tenga un trastorno de control de impulsos.</p>
+        <h4>D. La Mujer de Leonardo: abandono y sufrimiento emocional</h4>
+        <p>La Mujer de Leonardo experimenta la distancia afectiva de su esposo y descubre que continúa interesado en otra mujer. Su situación permite analizar las consecuencias emocionales de la infidelidad y el abandono dentro de una relación.</p>
+        <p>Desde una perspectiva psicológica, se pueden estudiar sentimientos como la inseguridad, la tristeza, la frustración y el miedo a perder la estabilidad familiar.</p>
+        <p class="interp"><b>Interpretación psicológica:</b> su personaje demuestra que los conflictos amorosos no afectan únicamente a quienes mantienen la relación sentimental, sino también a las personas que forman parte de su entorno familiar.</p>
+      </div>
+
+      <div class="panel" id="bk-filo" hidden>
+        <h3>6.2. Filosofía: libertad, destino, moral y responsabilidad</h3>
+        <div class="dos"><div>
+          <p><i>Bodas de sangre</i> presenta diferentes problemas filosóficos relacionados con las decisiones humanas y las consecuencias de nuestros actos.</p>
+          <div class="tabla-wrap"><table>
+            <thead><tr><th scope="col">Concepto</th><th scope="col">Relación con la obra</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Libertad</th><td>La Novia intenta decidir sobre sus sentimientos y su vida afectiva.</td></tr>
+              <tr><th scope="row">Destino</th><td>Los presagios y símbolos anuncian un desenlace trágico.</td></tr>
+              <tr><th scope="row">Responsabilidad</th><td>Los personajes deben enfrentar las consecuencias de sus decisiones.</td></tr>
+              <tr><th scope="row">Moral</th><td>Se cuestionan las normas sociales relacionadas con el matrimonio y el honor.</td></tr>
+              <tr><th scope="row">Justicia</th><td>La venganza aparece como una respuesta a los conflictos familiares, pero termina generando más sufrimiento.</td></tr>
+              <tr><th scope="row">Existencia</th><td>La muerte obliga a los personajes y al espectador a reflexionar sobre la fragilidad de la vida.</td></tr>
+            </tbody></table></div></div>
+          <figure class="foto"><img data-ph="Filosofía" src="img/Filosofia2.jpg" alt="Filosofía: libertad y destino"><figcaption>Fuente: paleothea.com</figcaption></figure></div>
+        <p class="interp"><b>Reflexión filosófica:</b> ¿los personajes estaban destinados a terminar en tragedia o sus decisiones y las normas sociales que los rodeaban contribuyeron a provocar ese desenlace?</p>
+        <p>Esta pregunta permite analizar la relación entre libertad individual, responsabilidad y destino. Una interpretación interesante es que Lorca presenta el destino como una fuerza trágica, pero también muestra cómo las decisiones humanas, los conflictos familiares y las estructuras sociales contribuyen a construirlo.</p>
+      </div>
+
+      <div class="panel" id="bk-soc" hidden>
+        <h3>6.3. Historia y sociología: el honor y las relaciones familiares</h3>
+        <div class="dos"><div>
+          <p>Desde la sociología, la obra permite analizar cómo las normas sociales influyen en el comportamiento de las personas y en la organización de las familias.</p>
+          <p>En el ambiente rural representado por Lorca, el honor familiar está relacionado con la reputación, el matrimonio, la sexualidad y la posición social. La huida de la Novia y Leonardo no es considerada únicamente una decisión sentimental, sino una acción que afecta la imagen pública de las familias.</p>
+          <p>También se observa cómo las rivalidades familiares pueden mantenerse durante generaciones y convertirse en una fuente de violencia.</p></div>
+          <figure class="foto"><img data-ph="Honor y familia" src="img/Sociologia2.jpg" alt="Honor y relaciones familiares"><figcaption>Fuente: blog.backintime.app</figcaption></figure></div>
+        <p class="interp"><b>Relación con la actualidad:</b> aunque las sociedades han cambiado, todavía existen situaciones en las que las personas sienten presión familiar para elegir pareja, mantener una relación, cumplir determinadas expectativas o evitar críticas sociales.</p>
+        <p>La obra permite cuestionar estas presiones y reflexionar sobre la importancia de resolver los conflictos mediante el diálogo y el respeto, en lugar de recurrir a la violencia.</p>
+      </div>
+
+      <div class="panel" id="bk-arte" hidden>
+        <h3>6.4. Arte: relación entre <i>Bodas de sangre</i> y <i>Duelo a garrotazos</i> de Francisco de Goya</h3>
+        <div class="duo">
+          <figure class="foto"><img data-ph="Duelo a garrotazos" src="img/duelo.jpg" alt="Duelo a garrotazos, de Goya"><figcaption><b>Duelo a garrotazos – Francisco de Goya.</b> Representación de dos hombres enfrentados violentamente.</figcaption></figure>
+          <figure class="foto"><img data-ph="El enfrentamiento en Bodas de sangre" src="img/enfrentamiento.jpg" alt="Enfrentamiento en Bodas de sangre"><figcaption><b>El enfrentamiento en Bodas de sangre.</b> La rivalidad entre el Novio y Leonardo termina en muerte.</figcaption></figure>
+        </div>
+        <p>La pintura <i>Duelo a garrotazos</i>, de Francisco de Goya, representa a dos hombres enfrentados con garrotes mientras se encuentran hundidos en un paisaje de tierra. La obra permite reflexionar sobre la violencia, la agresividad y los enfrentamientos humanos.</p>
+        <p>Su relación con <i>Bodas de sangre</i> puede establecerse mediante el conflicto entre el Novio y Leonardo, quienes terminan enfrentándose hasta provocar la muerte de ambos. En las dos obras aparece una representación de la violencia entre seres humanos y de las consecuencias destructivas de los enfrentamientos.</p>
+        <p class="interp"><b>Interpretación:</b> ambas manifestaciones artísticas permiten cuestionar la violencia como mecanismo para resolver conflictos. Esta comparación es temática y no significa que Lorca se haya inspirado directamente en la pintura de Goya.</p>
+      </div>
+
+      <div class="panel" id="bk-lit" hidden>
+        <h3>6.5. Literatura: comparación con <i>Romeo y Julieta</i></h3>
+        <div class="dos"><div>
+          <p>Una comparación literaria interesante es con <i>Romeo y Julieta</i>, de William Shakespeare. Ambas obras presentan relaciones amorosas que se enfrentan a conflictos familiares y sociales.</p></div>
+          <figure class="foto"><img data-ph="Romeo y Julieta" src="img/Romeo.jpg" alt="Romeo y Julieta"></figure></div>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th scope="col">Aspecto</th><th scope="col"><i>Bodas de sangre</i></th><th scope="col"><i>Romeo y Julieta</i></th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Autor</th><td>Federico García Lorca</td><td>William Shakespeare</td></tr>
+            <tr><th scope="row">Conflicto amoroso</th><td>Leonardo y la Novia mantienen una pasión que interfiere con el matrimonio de ella.</td><td>Romeo y Julieta se enamoran a pesar de la rivalidad de sus familias.</td></tr>
+            <tr><th scope="row">Conflicto familiar</th><td>Las antiguas rivalidades generan violencia y venganza.</td><td>Los enfrentamientos entre Montescos y Capuletos impiden la unión de los jóvenes.</td></tr>
+            <tr><th scope="row">Destino</th><td>Los presagios anuncian la tragedia.</td><td>Los acontecimientos conducen a un desenlace fatal.</td></tr>
+            <tr><th scope="row">Muerte</th><td>Leonardo y el Novio mueren en el enfrentamiento.</td><td>Romeo y Julieta mueren como consecuencia de sus circunstancias.</td></tr>
+            <tr><th scope="row">Tema central</th><td>Pasión, honor, destino y violencia familiar.</td><td>Amor, rivalidad familiar, juventud y destino.</td></tr>
+          </tbody></table></div>
+        <p class="interp"><b>Conclusión comparativa:</b> ambas tragedias muestran cómo los conflictos familiares y las normas sociales pueden destruir las relaciones amorosas. Sin embargo, <i>Bodas de sangre</i> presta especial atención a la pasión, la honra, las tradiciones rurales y la violencia, mientras que <i>Romeo y Julieta</i> se centra en el amor juvenil enfrentado a la rivalidad entre dos familias.</p>
+      </div>
+
+      <div class="panel" id="bk-cine" hidden>
+        <h3>6.6. Cine: conexiones con otras películas</h3>
+        <p>Las siguientes películas permiten estudiar los temas de <i>Bodas de sangre</i> desde diferentes perspectivas. Es importante distinguir entre las adaptaciones de la obra y las películas que únicamente comparten temas similares.</p>
+        <div class="cuadros obras">
+          <article><img class="portada" data-ph="La novia" src="img/La_novia.jpg" alt="La novia (2015)"><h4>La novia (2015)</h4><p><b>Directora:</b> Paula Ortiz.<br><b>Adaptación cinematográfica.</b></p><p>Es una adaptación de <i>Bodas de sangre</i> que presenta la historia del triángulo amoroso entre la Novia, Leonardo y el Novio. Permite observar cómo los símbolos, las emociones y los conflictos de la obra teatral pueden trasladarse al lenguaje cinematográfico mediante imágenes, música, fotografía y actuaciones. Es la comparación audiovisual más directa para este proyecto.</p><p class="nota">Fuente: Instituto Cervantes y Biblioteca Nacional de España.</p></article>
+          <article><img class="portada" data-ph="Romeo + Juliet" src="img/Romeo+julieta.jpg" alt="Romeo + Juliet (1996)"><h4>Romeo + Juliet (1996)</h4><p><b>Director:</b> Baz Luhrmann.<br><b>Tema:</b> amor, rivalidad familiar y tragedia.</p><p>La película presenta la historia de dos jóvenes que se enamoran a pesar del enfrentamiento entre sus familias. Su relación con <i>Bodas de sangre</i> se encuentra en la manera en que las rivalidades familiares y las circunstancias sociales dificultan las relaciones amorosas y contribuyen al desenlace trágico.</p></article>
+          <article><img class="portada" data-ph="West Side Story" src="img/West-side.jpg" alt="West Side Story (2021)"><h4>West Side Story (2021)</h4><p><b>Director:</b> Steven Spielberg.<br><b>Tema:</b> rivalidad, violencia y amor prohibido.</p><p>La película presenta una historia de amor que se desarrolla en medio de la rivalidad entre dos grupos enfrentados. Al igual que en <i>Bodas de sangre</i>, el amor de los protagonistas se encuentra condicionado por los conflictos colectivos y la violencia que los rodea.</p></article>
+        </div>
+        <p class="interp"><b>Conclusión de las conexiones cinematográficas:</b> las películas permiten reconocer que los conflictos relacionados con el amor, la rivalidad, la libertad y la violencia son temas universales que pueden expresarse mediante diferentes lenguajes artísticos. <i>La novia</i> es una adaptación directa, mientras que las otras dos películas establecen relaciones temáticas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="b-reflexion" class="bloque">
+    <p class="num">07</p><h2>Reflexionemos</h2>
+    <h3>7.1. Preguntas para reflexionar</h3>
+    <ol class="vineta">
+      <li>¿Consideras que la Novia tenía derecho a abandonar su matrimonio para seguir sus sentimientos por Leonardo?</li>
+      <li>¿Hasta qué punto las expectativas familiares y sociales pueden influir en las decisiones personales?</li>
+      <li>¿Crees que la Madre actuó correctamente al impulsar a su hijo a perseguir a Leonardo y a la Novia?</li>
+      <li>¿El honor familiar justifica de alguna manera la violencia y la venganza?</li>
+      <li>¿Consideras que Leonardo actuó responsablemente al abandonar a su esposa y a su hijo?</li>
+      <li>¿Los personajes estaban destinados a terminar en tragedia o sus propias decisiones provocaron ese desenlace?</li>
+      <li>¿Qué representa la muerte en la obra y por qué Lorca utiliza personajes simbólicos como la Luna y la Mendiga?</li>
+      <li>¿Qué enseñanzas podemos obtener de la obra sobre el amor, la libertad y las relaciones familiares?</li>
+    </ol>
+
+    <h3>7.2. Actividad de comparación: la sociedad de la época y la actualidad</h3>
+    <p>¿Ha cambiado la forma de entender el amor y el matrimonio? Se propone comparar las expectativas sociales representadas en <i>Bodas de sangre</i> con las relaciones familiares y sentimentales de la sociedad actual.</p>
+    <div class="tabla-wrap"><table>
+      <thead><tr><th scope="col">Aspecto</th><th scope="col">Época representada en la obra</th><th scope="col">Actualidad</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Matrimonio</th><td>Podía estar condicionado por intereses económicos y familiares.</td><td>Se reconoce cada vez más la importancia de la decisión libre de la pareja.</td></tr>
+        <tr><th scope="row">Honor familiar</th><td>La reputación podía tener gran influencia en las decisiones personales.</td><td>Se cuestiona que la reputación familiar determine la vida de las personas.</td></tr>
+        <tr><th scope="row">Libertad femenina</th><td>Existían fuertes expectativas sobre el comportamiento y las decisiones de las mujeres.</td><td>Las mujeres cuentan con mayores derechos y posibilidades de decisión.</td></tr>
+        <tr><th scope="row">Relaciones amorosas</th><td>Las normas sociales podían limitar la elección de pareja.</td><td>Existe mayor diversidad de formas de establecer relaciones.</td></tr>
+        <tr><th scope="row">Violencia familiar</th><td>En determinados entornos se justificaba mediante ideas tradicionales de honor y venganza.</td><td>Se reconoce la importancia de prevenir la violencia y proteger los derechos individuales.</td></tr>
+      </tbody></table></div>
+    <p class="interp"><b>Conclusión de la actividad:</b> aunque las sociedades han experimentado importantes cambios, todavía existen situaciones en las que las personas enfrentan presiones familiares y sociales al momento de tomar decisiones sentimentales. La obra invita a cuestionar estas imposiciones y a defender las relaciones basadas en el respeto y la libertad.</p>
+
+    <h3>7.3. Actividad: identifica los símbolos</h3>
+    <p>Relaciona cada símbolo con su significado. Selecciona una respuesta para cada elemento.</p>
+    <div class="actividad" id="actividad-b">
+      <fieldset><legend>1. La Luna</legend>
+        <label><input type="radio" name="bq1" value="ok"> Muerte y fatalidad</label>
+        <label><input type="radio" name="bq1" value="no"> Felicidad matrimonial</label></fieldset>
+      <fieldset><legend>2. El caballo</legend>
+        <label><input type="radio" name="bq2" value="no"> Tranquilidad familiar</label>
+        <label><input type="radio" name="bq2" value="ok"> Pasión y fuerza instintiva</label></fieldset>
+      <fieldset><legend>3. La sangre</legend>
+        <label><input type="radio" name="bq3" value="ok"> Vida, pasión y muerte</label>
+        <label><input type="radio" name="bq3" value="no"> Riqueza económica</label></fieldset>
+      <fieldset><legend>4. La Mendiga</legend>
+        <label><input type="radio" name="bq4" value="no"> Protección familiar</label>
+        <label><input type="radio" name="bq4" value="ok"> Representación de la Muerte</label></fieldset>
+      <fieldset><legend>5. El cuchillo</legend>
+        <label><input type="radio" name="bq5" value="no"> Unión matrimonial</label>
+        <label><input type="radio" name="bq5" value="ok"> Violencia y muerte</label></fieldset>
+      <button type="button" class="comprobar" id="comprobar-b">Comprobar respuestas</button>
+      <p id="resultado-b" role="status"></p>
+    </div>
+
+    <h3>7.4. Actividad: debate sobre las decisiones de los personajes</h3>
+    <p><b>Tema: ¿el amor justifica cualquier decisión?</b> Se propone organizar un debate grupal en el que los participantes defiendan diferentes posiciones.</p>
+    <ul class="vineta">
+      <li><b>Postura 1:</b> La Novia tenía derecho a elegir con quién quería estar, porque nadie debería permanecer en una relación por obligación.</li>
+      <li><b>Postura 2:</b> La Novia debió actuar con mayor responsabilidad y resolver su situación sentimental antes de casarse.</li>
+      <li><b>Postura 3:</b> Leonardo también tiene responsabilidad por las consecuencias de sus decisiones, porque tenía una esposa y un hijo.</li>
+      <li><b>Postura 4:</b> La Madre representa una sociedad que permite que el honor y la venganza tengan más importancia que la vida humana.</li>
+    </ul>
+    <p>Al finalizar, cada grupo deberá explicar qué postura considera más razonable y argumentar su respuesta utilizando acontecimientos de la obra.</p>
+
+    <h3>7.5. Conclusiones generales del análisis</h3>
+    <p><i>Bodas de sangre</i> es una obra que permite reflexionar sobre los conflictos que pueden surgir cuando los sentimientos personales se enfrentan a las expectativas familiares y sociales.</p>
+    <p>A través de la historia de la Novia, Leonardo y el Novio, Federico García Lorca demuestra cómo las decisiones humanas pueden desencadenar consecuencias que afectan no solamente a los protagonistas, sino también a sus familias y a las personas que los rodean.</p>
+    <p>La Madre representa el dolor provocado por la pérdida y la violencia, mientras que la Novia simboliza el conflicto entre la libertad individual y las normas sociales. Leonardo, por su parte, muestra cómo la pasión y los deseos personales pueden entrar en contradicción con las responsabilidades familiares.</p>
+    <p>Los símbolos de la Luna, el caballo, la sangre y los cuchillos permiten comprender que la tragedia no se construye únicamente mediante las acciones de los personajes, sino también mediante imágenes poéticas que anticipan el desenlace.</p>
+    <p>Finalmente, la obra invita a cuestionar la violencia, la venganza y las imposiciones sociales, demostrando que el honor no debería estar por encima de la vida humana y que las relaciones deben construirse desde la libertad, la responsabilidad y el respeto.</p>
+
+    <h3>7.6. Reflexión final del grupo</h3>
+    <blockquote><i>Bodas de sangre</i> nos enseña que los sentimientos humanos pueden entrar en conflicto con las normas sociales, las responsabilidades familiares y las expectativas de otras personas. Consideramos que uno de los principales mensajes de la obra es la importancia de tomar decisiones con libertad, pero también con responsabilidad, reconociendo que nuestras acciones pueden afectar a quienes nos rodean. La historia demuestra que la violencia y la venganza nunca representan una solución verdadera, ya que solamente generan más sufrimiento y destruyen familias. Por ello, creemos que el respeto, la comunicación y la capacidad de resolver los conflictos mediante el diálogo son fundamentales para construir relaciones saludables.</blockquote>
+  </section>
+
+  <section id="b-biblio" class="bloque">
+    <p class="num">08</p><h2>Bibliografía y fuentes consultadas (APA 7)</h2>
+    <h3>8.1. Fuentes sobre Federico García Lorca y su trayectoria</h3>
+    <ul class="apa">
+      <li>Biblioteca Nacional de España. (s. f.). <i>García Lorca, Federico (1898-1936)</i>.</li>
+      <li>Instituto Cervantes. (s. f.). <i>Bodas de sangre, de Federico García Lorca</i>. Biblioteca electrónica.</li>
+      <li>Biblioteca Nacional de España. (2018). <i>Inmune al paso del tiempo. Bodas de sangre y sus adaptaciones cinematográficas</i>.</li>
+    </ul>
+    <h3>8.2. Fuentes sobre el argumento y la estructura teatral</h3>
+    <ul class="apa">
+      <li>Barderas Rey, R. (2017). Bodas de sangre. <i>TECLA. Revista de la Consejería de Educación en el Reino Unido e Irlanda, (3)</i>.</li>
+      <li>Instituto Nacional de las Artes Escénicas y de la Música. (s. f.). <i>Bodas de sangre</i>.</li>
+      <li>Arancibia Durán, C. (s. f.). <i>Bodas de sangre: resumen, personajes y análisis</i>. Cultura Genial.</li>
+    </ul>
+    <h3>8.3. Fuentes sobre el contexto histórico</h3>
+    <ul class="apa">
+      <li>Junta de Andalucía. (s. f.). <i>Cortijo del Fraile: Parque Natural Cabo de Gata-Níjar</i>.</li>
+      <li>Instituto Nacional de las Artes Escénicas y de la Música. (s. f.). <i>Bodas de sangre: el Cortijo del Fraile en Níjar (Almería)</i>.</li>
+      <li>Universidad de Barcelona. (2022). <i>Bodas de Sangre de Federico García Lorca ante la tragedia clásica</i> [Trabajo de fin de grado].</li>
+    </ul>
+    <h3>8.4. Fuentes sobre el simbolismo y análisis literario</h3>
+    <ul class="apa">
+      <li>Arquero Carrión, C. (2025). <i>Simbología en la tragedia lorquiana Bodas de sangre</i> [Trabajo de fin de grado, Universidad Rey Juan Carlos].</li>
+      <li>Martín, M. (2009). <i>Bodas de sangre: ¿literatura o realidad?</i> Centro Virtual Cervantes.</li>
+      <li>Universidad de Oviedo. (s. f.). <i>Bodas de sangre y sus elementos trágicos</i>.</li>
+    </ul>
+    <h3>8.5. Fuentes para las conexiones cinematográficas</h3>
+    <ul class="apa">
+      <li>Instituto Cervantes. (s. f.). <i>La novia, de Paula Ortiz</i>.</li>
+      <li>Instituto de la Cinematografía y de las Artes Audiovisuales. (2015). <i>La novia</i>. Catálogo de películas.</li>
+      <li>Universidad de Barcelona. (2015, 27 de agosto). <i>La película La novia, de Paula Ortiz, al Festival de San Sebastián 2015</i>.</li>
+    </ul>
+    <h3>8.6. Referencia principal de la obra (APA 7)</h3>
+    <ul class="apa"><li>García Lorca, F. (1936). <i>Bodas de sangre</i>. Ediciones del Árbol.</li></ul>
+    <p class="nota">Esta referencia corresponde a una edición histórica de la obra. Si se utiliza una edición diferente, deben colocarse el año, la editorial y demás datos del libro que realmente se consultó.</p>
+  </section>
+</main>
+
+
+<footer><p class="creditos">[Nombre del grupo] · [Curso] · [Institución] · [Año]</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
